@@ -1,16 +1,15 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: A glimpse into who I am
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I am a highly motivated Machine Learning Scientist specializing in Efficient Learning, Computer Vision, and NLP. With extensive experience in research and industrial projects, I focus on optimizing and deploying cutting-edge neural networks on constrained devices.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+### Who am I?
+- 📍 Based in Munich, Germany
+- 🎓 MSc in Robotics, Cognition, and Intelligence, TUM
+- 🌟 Published research at NeurIPS and AABI
+- 🔧 Skills: Bayesian Inference, Edge AI, Knowledge Distillation, Computer Vision
 
-What else do you need?
-
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+My passion is solving complex challenges through innovative AI solutions. Whether in a surgical room, robotics, or embedded systems, I thrive on creating efficient and robust technologies.
