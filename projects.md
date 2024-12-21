@@ -25,10 +25,6 @@ subtitle: Innovations I’ve brought to life
 ---
 
 ## Computer Vision
-
-
-
-
 ### Data Augmentation for Saliency Prediction
 - **Company/Institution:** EPFL, Lausanne, Switzerland
 - **Description:** Developed augmentation techniques to improve saliency prediction accuracy.
@@ -46,6 +42,7 @@ subtitle: Innovations I’ve brought to life
 - **Company/Institution:** TUM, Munich, Germany
 - **Description:** Implemented OCR, GUI, and Kalman filters for license plates and pedestrian detection.
 - **Tools:** PyTorch, OpenCV, PyQt
+
 ---
 
 ## Natural Language Processing (NLP)
@@ -84,6 +81,7 @@ subtitle: Innovations I’ve brought to life
 - **Company/Institution:** BMW, Munich, Germany
 - **Description:** Optimized neural networks for deployment on edge devices and designed a framework for model optimization.
 - **Tools:** PyTorch, TFLite, ONNX, Apache TVM
+
 ---
 
 ## Hackathons and Uni Projects
