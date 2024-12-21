@@ -29,16 +29,18 @@ subtitle: Innovations I’ve brought to life
 - **Company/Institution:** EPFL, Lausanne, Switzerland
 - **Description:** Developed augmentation techniques to improve saliency prediction accuracy.
 - **Tools:** PyTorch, OpenCV, PIL
-### [Visual Perception of Unknown Objects](https://github.com/example-repo)
+
+### Visual Perception of Unknown Objects
 - **Company/Institution:** CARIAD (Volkswagen Group), Munich, Germany
 - **Description:** Developed instance segmentation and language-to-vision techniques, achieving state-of-the-art performance on COCO dataset. Submitted to CVPR.
 - **Tools:** Computer Vision, Transformers, Semantic Segmentation, Knowledge Distillation
 
-### [Perception through Segmentation](https://github.com/example-repo)
+### Perception through Segmentation
 - **Company/Institution:** Chair of Visual Computing and AI, TUM, Munich, Germany
 - **Description:** Built PyTorch models for image segmentation and object detection.
 - **Tools:** PyTorch, Pandas
-### [License Plate Detection and Pedestrian Tracking](https://github.com/example-repo)
+
+### [License Plate Detection and Pedestrian Tracking]
 - **Company/Institution:** TUM, Munich, Germany
 - **Description:** Implemented OCR, GUI, and Kalman filters for license plates and pedestrian detection.
 - **Tools:** PyTorch, OpenCV, PyQt
@@ -62,7 +64,7 @@ subtitle: Innovations I’ve brought to life
 
 
 ## Edge AI and Model Optimization
-### Model Sparsification and Inference
+### [Model Sparsification and Inference Optimization](https://www.mdsi.tum.de/fileadmin/w00cet/di-lab/pdf/SigOpt_SS2022_Final_Report.pdf)
 - **Company/Institution:** Intel, Munich, Germany
 - **Description:** Researched and implemented sparse, quantized neural networks for edge devices.
 - **Tools:** Python, PyTorch, TVM, SparseZoo, TFLite
@@ -86,7 +88,7 @@ subtitle: Innovations I’ve brought to life
 
 ## Hackathons and Uni Projects
 
-### [Breast Cancer Detection and Localization from MRI Images](https://github.com/example-repo)
+### Breast Cancer Detection and Localization from MRI Images
 - **Company/Institution:** Lauzhack, Lausanne, Switzerland
 - **Description:** Developed a CNN for detecting and segmenting breast cancer from MRI scans.
 - **Tools:** OpenCV, PyTorch, Docker, Transformers
