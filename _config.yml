@@ -150,6 +150,14 @@ footer-text-col: "#777777"
 footer-link-col: "#404040"
 footer-hover-col: "#0085A1"
 
+# Custom CSS and JS files
+extracss:
+  - "/assets/css/custom.css"
+  - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  - "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+extrajs:
+  - "/assets/js/custom.js"
+
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
 

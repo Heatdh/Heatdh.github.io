@@ -1,0 +1,326 @@
+/* Custom CSS for Rayen's Portfolio */
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --text-color: #333;
+  --light-bg: #f9f9f9;
+  --dark-bg: #2c3e50;
+  --highlight: #27ae60;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8;
+  color: var(--text-color);
+  background-color: var(--light-bg);
+  transition: background-color var(--transition-speed);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--secondary-color);
+  transition: color var(--transition-speed);
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* Navbar styling */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-nav .nav-link {
+  font-weight: 600;
+  transition: color var(--transition-speed);
+}
+
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: var(--accent-color);
+}
+
+.navbar-custom .avatar-container .avatar-img-border {
+  box-shadow: var(--card-shadow);
+  border: 3px solid var(--secondary-color);
+  transition: all var(--transition-speed);
+}
+
+.navbar-custom .avatar-container:hover .avatar-img-border {
+  border-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+/* Section styling */
+section {
+  padding: 2.5rem 0;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+section:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+section h2 {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+/* Intro section */
+#intro {
+  position: relative;
+  padding: 3rem;
+}
+
+#intro::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--secondary-color), var(--highlight));
+  border-radius: 3px 0 0 3px;
+}
+
+#intro strong {
+  color: var(--accent-color);
+}
+
+#intro em {
+  color: var(--highlight);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Highlights section */
+#highlights ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+#highlights li {
+  position: relative;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  transition: transform var(--transition-speed);
+}
+
+#highlights li:hover {
+  transform: translateX(5px);
+}
+
+#highlights li::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--highlight);
+}
+
+/* Contact section */
+#contact {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem;
+}
+
+#contact h2 {
+  color: white;
+  border-bottom-color: var(--highlight);
+}
+
+#contact a {
+  color: var(--highlight);
+}
+
+#contact a:hover {
+  color: white;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#contact li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+#contact li:before {
+  margin-right: 10px;
+  color: var(--highlight);
+}
+
+/* Post previews */
+.post-preview {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.post-preview:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-title {
+  color: var(--primary-color);
+}
+
+.post-subtitle {
+  color: var(--secondary-color);
+}
+
+.post-meta {
+  color: #777;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-bg);
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer-links a {
+  color: var(--highlight);
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* Skills section */
+.skill-badge {
+  display: inline-block;
+  background-color: var(--light-bg);
+  color: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+  margin: 0.25rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid var(--secondary-color);
+  transition: all var(--transition-speed);
+}
+
+.skill-badge:hover {
+  background-color: var(--secondary-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animated {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #intro, section {
+    padding: 1.5rem;
+  }
+  
+  #intro::before {
+    width: 4px;
+  }
+}
+
+/* Dark mode toggle */
+.dark-mode-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-speed);
+}
+
+.dark-mode-toggle:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.dark-mode section {
+  background-color: #2d2d2d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar {
+  background-color: #2d2d2d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .navbar-custom .navbar-brand,
+body.dark-mode .navbar-custom .navbar-nav .nav-link {
+  color: #f0f0f0;
+}
+
+body.dark-mode .post-preview {
+  background-color: #2d2d2d;
+}
+
+body.dark-mode .skill-badge {
+  background-color: #3d3d3d;
+  color: #f0f0f0;
+}
