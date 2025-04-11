@@ -82,6 +82,9 @@
     {% endfor %}
   {% endif %}
 
+  <!-- Custom background effects CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/background-effects.css' | relative_url }}">
+
   {% if page.ext-css %}
     {% for css in page.ext-css %}
       {% include ext-css.html css=css %}
