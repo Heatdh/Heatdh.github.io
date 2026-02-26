@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Rayen Dhahri</title>
+  <meta name="description" content="Projects by Rayen Dhahri — Robotics, Computer Vision, NLP, Edge AI, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="kanji-watermark">作品集</div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="logo-accent">R</span>ayen<span class="logo-dot"></span></a>
+      <div class="nav-toggle"><span></span><span></span><span></span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Research & Engineering</p>
+          <h1 class="section-title">Projects</h1>
+          <p class="section-subtitle">Research-driven work spanning model optimization, edge deployment, perception, and applied ML — shipped at Zeiss, BMW, Huawei, Intel, CARIAD, and academic labs.</p>
+          <div class="anime-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured / Flagship Projects -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <h2 class="section-title reveal" style="font-size: 1.5rem; margin-bottom: 2rem;">
+          <span class="text-gradient">Featured Research</span>
+        </h2>
+
+        <div class="featured-projects stagger-children">
+
+          <!-- Quant-Trim -->
+          <div class="glass-card featured-card">
+            <div class="featured-content">
+              <div class="featured-badge">NeurIPS 2025 · Published</div>
+              <h3 class="featured-title">Quant-Trim: Hardware-Neutral Quantization-Robust Checkpoints</h3>
+              <p class="featured-desc">
+                Edge accelerators rely on low-bit quantization, but vendor compilers differ in scaling, clipping, and kernel support — often as black boxes. The same FP checkpoint yields inconsistent accuracy across backends. <strong>Quant-Trim</strong> introduces a training-phase method that produces hardware-neutral checkpoints robust to backend and precision choices, combining progressive fake quantization with reverse pruning to tame outlier-driven scale inflation. Agnostic to quantization schemes (symmetric/asymmetric, per-tensor/per-channel, INT8/INT4) with no vendor-specific graph changes required.
+              </p>
+              <div class="featured-metrics">
+                <div class="metric"><span class="metric-value">INT4–INT8</span><span class="metric-label">Precision Range</span></div>
+                <div class="metric"><span class="metric-value">Multi-backend</span><span class="metric-label">Hardware Neutral</span></div>
+                <div class="metric"><span class="metric-value">No Retraining</span><span class="metric-label">Per-Backend</span></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Quantization</span><span class="tag">Pruning</span><span class="tag">Edge Deployment</span><span class="tag">INT4/INT8</span><span class="tag">PyTorch</span>
+              </div>
+              <div class="featured-links">
+                <a href="https://arxiv.org/abs/2511.15300" target="_blank" class="btn btn-primary btn-sm">📄 Paper (arXiv)</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bayesian Sparsification -->
+          <div class="glass-card featured-card">
+            <div class="featured-content">
+              <div class="featured-badge">NeurIPS 2024 · Published</div>
+              <h3 class="featured-title">Bayesian Sparsification via Occam's Razor</h3>
+              <p class="featured-desc">
+                A principled Bayesian approach to neural network sparsification using the marginal likelihood. Achieves state-of-the-art compression ratios while preserving model quality — applied to CNNs, ViTs, and LLMs. Extended at AABI 2024 to structured sparsity for vision transformers and large language models at scale.
+              </p>
+              <div class="featured-metrics">
+                <div class="metric"><span class="metric-value">NeurIPS</span><span class="metric-label">Published '24</span></div>
+                <div class="metric"><span class="metric-value">AABI</span><span class="metric-label">Extended '24</span></div>
+                <div class="metric"><span class="metric-value">SOTA</span><span class="metric-label">Compression</span></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Bayesian ML</span><span class="tag">Sparsification</span><span class="tag">Marginal Likelihood</span><span class="tag">LLMs</span><span class="tag">ViTs</span>
+              </div>
+              <div class="featured-links">
+                <a href="https://openreview.net/forum?id=jYOd0K74PB" target="_blank" class="btn btn-primary btn-sm">📄 NeurIPS Paper</a>
+                <a href="publications.html" class="btn btn-outline btn-sm">All Publications →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- World Model / Edge Optimization -->
+          <div class="glass-card featured-card">
+            <div class="featured-content">
+              <div class="featured-badge">Carl Zeiss · 2025 — Present</div>
+              <h3 class="featured-title">Foundation Model Optimization for Edge Deployment</h3>
+              <p class="featured-desc">
+                Optimizing large-scale foundation and world models — SAM, DepthAnything, DINOv2, Vision Transformers, and LLMs — for real-time inference on edge accelerators in safety-critical environments (surgical rooms, industrial inspection). Quantization, distillation, and architecture-aware compression pipelines targeting Jetson, FPGAs, and custom silicon with strict latency, energy, and memory budgets.
+              </p>
+              <div class="featured-metrics">
+                <div class="metric"><span class="metric-value">SAM · DINO</span><span class="metric-label">Models</span></div>
+                <div class="metric"><span class="metric-value">FPGA / Jetson</span><span class="metric-label">Targets</span></div>
+                <div class="metric"><span class="metric-value">Real-time</span><span class="metric-label">Inference</span></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">SAM</span><span class="tag">DepthAnything</span><span class="tag">DINOv2</span><span class="tag">ViT</span><span class="tag">LLMs</span><span class="tag">TensorRT</span><span class="tag">ONNX</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Research & Industry Projects -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title reveal" style="font-size: 1.5rem; margin-bottom: 1.5rem;">
+          <span class="text-gradient">Research & Industry</span>
+        </h2>
+
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="optimization">Model Optimization</button>
+          <button class="filter-btn" data-filter="perception">Perception & CV</button>
+          <button class="filter-btn" data-filter="nlp">NLP</button>
+          <button class="filter-btn" data-filter="robotics">Robotics & Systems</button>
+          <button class="filter-btn" data-filter="applied">Applied ML</button>
+        </div>
+
+        <div class="projects-grid stagger-children">
+
+          <!-- Model Optimization -->
+          <div class="glass-card project-card" data-category="optimization">
+            <span class="project-category">Model Optimization · Intel</span>
+            <h3 class="project-title">Sparse & Quantized Networks for Edge Inference</h3>
+            <p class="project-org">Intel Data Innovation Lab, Munich — 2022</p>
+            <p class="project-desc">Researched and implemented combined sparsification + quantization pipelines for edge device deployment. Benchmarked across SparseZoo models targeting INT8/pruned inference on CPU and accelerator backends.</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span><span class="tag">Apache TVM</span><span class="tag">SparseZoo</span><span class="tag">TFLite</span>
+            </div>
+            <a href="https://www.mdsi.tum.de/fileadmin/w00cet/di-lab/pdf/SigOpt_SS2022_Final_Report.pdf" target="_blank" class="project-link">
+              Technical Report
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <div class="glass-card project-card" data-category="optimization">
+            <span class="project-category">Model Optimization · BMW</span>
+            <h3 class="project-title">Neural Network Optimization for Automotive ECUs</h3>
+            <p class="project-org">BMW, Munich — 2023–2024</p>
+            <p class="project-desc">Designed an end-to-end optimization framework for deploying neural networks on automotive Edge Control Units. Pipeline encompasses quantization, graph optimization (ONNX), and backend-specific compilation targeting resource-constrained ECU hardware.</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span><span class="tag">ONNX</span><span class="tag">TFLite</span><span class="tag">Apache TVM</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card" data-category="optimization">
+            <span class="project-category">Optimization · Huawei</span>
+            <h3 class="project-title">Robot Fleet Task Optimization with RL & LLMs</h3>
+            <p class="project-org">Huawei Munich Research Center — 2023</p>
+            <p class="project-desc">Optimized multi-robot task assignment and monitoring using reinforcement learning and LLM-based planners. Compressed control networks for on-device inference on Jetson platforms in SLAM-based environments.</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span><span class="tag">RL</span><span class="tag">LLMs</span><span class="tag">ROS</span><span class="tag">Jetson</span><span class="tag">SLAM</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card" data-category="optimization">
+            <span class="project-category">Hardware · Infineon</span>
+            <h3 class="project-title">AI Pipeline for Microchip Leakage Detection</h3>
+            <p class="project-org">Infineon Technologies, Munich — 2020–2023</p>
+            <p class="project-desc">Built a production AI pipeline for semiconductor leakage detection using efficient autoencoders. Also designed an NFC encoder/decoder in VHDL to replace RAM in embedded NFC systems.</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span><span class="tag">Autoencoder</span><span class="tag">VHDL</span><span class="tag">Verilog</span>
+            </div>
+          </div>
+
+          <!-- Perception & CV -->
+          <div class="glass-card project-card" data-category="perception">
+            <span class="project-category">Perception · CARIAD</span>
+            <h3 class="project-title">Open-World Instance Segmentation with Knowledge Distillation</h3>
+            <p class="project-org">CARIAD (Volkswagen Group), Munich — 2024</p>
+            <p class="project-desc">Developed visual perception techniques for unknown/novel objects using instance segmentation, language-to-vision alignment, and knowledge distillation. Achieved SOTA on COCO benchmarks. Submitted to CVPR.</p>
+            <div class="project-tags">
+              <span class="tag">Transformers</span><span class="tag">Segmentation</span><span class="tag">Knowledge Distillation</span><span class="tag">COCO</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card" data-category="perception">
+            <span class="project-category">Perception · EPFL</span>
+            <h3 class="project-title">Data Augmentation for Saliency Prediction</h3>
+            <p class="project-org">EPFL, Lausanne — 2022–2023</p>
+            <p class="project-desc">Developed novel augmentation strategies for visual saliency prediction models, achieving competitive performance on the MIT300 Validation benchmark.</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">MIT300</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card" data-category="perception">
+            <span class="project-category">Perception · TUM</span>
+            <h3 class="project-title">Real-Time License Plate Detection & Pedestrian Tracking</h3>
+            <p class="project-org">TUM, Munich</p>
+            <p class="project-desc">End-to-end pipeline combining OCR with Kalman filtering for license plate recognition and multi-object pedestrian tracking in real-time video streams.</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span><span class="tag">OpenCV</span><span class="tag">Kalman Filter</span><span class="tag">OCR</span>
+            </div>
+          </div>
+
+          <!-- NLP -->
+          <div class="glass-card project-card" data-category="nlp">
+            <span class="project-category">NLP · TUM</span>
+            <h3 class="project-title">Key Point Extraction from Legal Judgements</h3>
+            <p class="project-org">TUM, Munich — 2022 · Published on arXiv</p>
+            <p class="project-desc">Automated extraction of key points from legal document premises using BERT, IBM Debater, PageRank, and clustering. Paper published on arXiv.</p>
+            <div class="project-tags">
+              <span class="tag">BERT</span><span class="tag">PageRank</span><span class="tag">Clustering</span><span class="tag">IBM Debater</span>
+            </div>
+            <a href="https://arxiv.org/abs/2212.12238" target="_blank" class="project-link">
+              arXiv Paper
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <div class="glass-card project-card" data-category="nlp">
+            <span class="project-category">NLP · EPFL</span>
+            <h3 class="project-title">Globywood — Global Cinema Trend Analysis</h3>
+            <p class="project-org">EPFL Applied Data Analysis — 2022</p>
+            <p class="project-desc">Large-scale NLP analysis of world cinema trends across decades and geographies using sentence embeddings, clustering, and statistical methods on movie plot corpora.</p>
+            <div class="project-tags">
+              <span class="tag">SentenceTransformer</span><span class="tag">BERT</span><span class="tag">NLTK</span><span class="tag">SciPy</span>
+            </div>
+            <a href="https://github.com/epfl-ada/ada-2022-project-robopros" target="_blank" class="project-link">
+              GitHub
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <!-- Robotics & Systems -->
+          <div class="glass-card project-card" data-category="robotics">
+            <span class="project-category">Robotics · UnternehmerTUM</span>
+            <h3 class="project-title">Autonomous Agricultural Robot with Real-Time Classification</h3>
+            <p class="project-org">UnternehmerTUM, Munich</p>
+            <p class="project-desc">Designed a field robot for real-time raspberry plant gender classification and precision spraying. On-device inference via TensorRT on Jetson with custom CUDA pipeline.</p>
+            <div class="project-tags">
+              <span class="tag">TensorRT</span><span class="tag">Jetson</span><span class="tag">CUDA</span><span class="tag">OpenCV</span><span class="tag">PyTorch</span>
+            </div>
+            <a href="https://www.youtube.com/watch?v=A1FOvJhN_ME" target="_blank" class="project-link">
+              Demo Video
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+
+          <div class="glass-card project-card" data-category="robotics">
+            <span class="project-category">Robotics · EPFL</span>
+            <h3 class="project-title">Vision-SLAM Autonomous Navigation Robot</h3>
+            <p class="project-org">EPFL, Lausanne</p>
+            <p class="project-desc">Autonomous robot with visual navigation using SLAM-based localization and path planning. Fused vision and LIDAR data for obstacle avoidance in dynamic environments.</p>
+            <div class="project-tags">
+              <span class="tag">ROS</span><span class="tag">SLAM</span><span class="tag">OpenCV</span><span class="tag">PyTorch</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card" data-category="robotics">
+            <span class="project-category">Systems · TUM</span>
+            <h3 class="project-title">Instruction Set Simulator — ELF Loader</h3>
+            <p class="project-org">TUM, Chair of Electronic Design Automation — 2020–2021</p>
+            <p class="project-desc">Contributed to the ETISS Instruction Set Simulator. Implemented a full ELF loader and memory layout manager for RISC-V architecture simulation.</p>
+            <div class="project-tags">
+              <span class="tag">C++</span><span class="tag">RISC-V</span><span class="tag">ELF</span><span class="tag">Systems</span>
+            </div>
+          </div>
+
+          <!-- Applied ML -->
+          <div class="glass-card project-card" data-category="applied">
+            <span class="project-category">Applied · Lauzhack</span>
+            <h3 class="project-title">Breast Cancer Detection & Segmentation from MRI</h3>
+            <p class="project-org">Lauzhack Hackathon, Lausanne</p>
+            <p class="project-desc">Transformer-based model for 3D MRI breast cancer detection and segmentation. Built during a 24-hour hackathon with Docker-based inference pipeline.</p>
+            <div class="project-tags">
+              <span class="tag">Transformers</span><span class="tag">PyTorch</span><span class="tag">Docker</span><span class="tag">Medical Imaging</span>
+            </div>
+          </div>
+
+          <div class="glass-card project-card" data-category="applied">
+            <span class="project-category">Applied · TUM.AI</span>
+            <h3 class="project-title">Pre-Symptomatic Disease Detection from Wearables</h3>
+            <p class="project-org">TUM.AI, Munich</p>
+            <p class="project-desc">Anomaly detection on physiological time-series from wearable devices for early disease detection before symptom onset. Used neural ODE-inspired architectures.</p>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span><span class="tag">Time Series</span><span class="tag">NeuroKit2</span><span class="tag">Docker</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">© 2026 Rayen Dhahri — Built with <span class="heart">♥</span> and too much coffee</p>
+        <div class="footer-links">
+          <a href="https://github.com/Heatdh" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/rayen-dh" target="_blank">LinkedIn</a>
+          <a href="mailto:rayendhahri@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

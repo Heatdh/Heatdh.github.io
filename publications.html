@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications — Rayen Dhahri</title>
+  <meta name="description" content="Research publications by Rayen Dhahri — NeurIPS, AABI, arXiv.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+  <canvas id="particles-canvas"></canvas>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="kanji-watermark">研究論文</div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><span class="logo-accent">R</span>ayen<span class="logo-dot"></span></a>
+      <div class="nav-toggle"><span></span><span></span><span></span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="cv.html">CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Publications</p>
+          <h1 class="section-title">Research & Papers</h1>
+          <p class="section-subtitle">Sharing my work with the research community.</p>
+          <div class="anime-line"></div>
+        </div>
+        <div class="reveal mt-4" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+          <a href="https://scholar.google.com/scholar?q=Rayen+Dhahri" target="_blank" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:4px"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+            Google Scholar
+          </a>
+          <a href="https://arxiv.org/search/?query=Rayen+Dhahri&searchtype=author" target="_blank" class="btn btn-outline">arXiv Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="publications-list stagger-children">
+
+          <!-- 2025 -->
+          <div class="glass-card pub-card">
+            <p class="pub-year">2025</p>
+            <h3 class="pub-title">Quant-Trim: Hardware-Neutral Quantization-Robust Checkpoints via Progressive Fake Quantization and Reverse Pruning</h3>
+            <p class="pub-venue">EurIPS 2025</p>
+            <p class="pub-summary">A training-phase method producing hardware-neutral checkpoints robust to backend and precision choices. Combines progressive fake quantization with reverse pruning to tame outlier-driven scale inflation. Agnostic to quantization schemes (symmetric/asymmetric, per-tensor/per-channel, INT8/INT4), requires no vendor-specific graph changes, and avoids per-backend retraining.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2511.15300" target="_blank" class="pub-link">📄 arXiv</a>
+              <a href="https://arxiv.org/pdf/2511.15300" target="_blank" class="pub-link">📋 PDF</a>
+            </div>
+          </div>
+
+          <!-- 2024 -->
+          <div class="glass-card pub-card">
+            <p class="pub-year">2024</p>
+            <h3 class="pub-title">Shaving Weights with Occam's Razor: Bayesian Sparsification for Neural Networks Using the Marginal Likelihood</h3>
+            <p class="pub-venue">NeurIPS 2024</p>
+            <p class="pub-summary">A principled Bayesian approach to neural network sparsification using the marginal likelihood, achieving state-of-the-art compression while maintaining model performance.</p>
+            <div class="pub-links">
+              <a href="https://openreview.net/forum?id=jYOd0K74PB" target="_blank" class="pub-link">📄 Paper</a>
+              <a href="https://openreview.net/forum?id=jYOd0K74PB" target="_blank" class="pub-link">🔗 OpenReview</a>
+            </div>
+          </div>
+
+          <div class="glass-card pub-card">
+            <p class="pub-year">2024</p>
+            <h3 class="pub-title">Scaling Sparse Models with OPD</h3>
+            <p class="pub-venue">AABI 2024</p>
+            <p class="pub-summary">Structured sparsity approaches for vision transformers and large language models, extending Bayesian methods to modern architectures at scale.</p>
+            <div class="pub-links">
+              <span class="pub-link" style="opacity:0.5">🔗 Link coming soon</span>
+            </div>
+          </div>
+
+          <!-- 2023 -->
+          <div class="glass-card pub-card">
+            <p class="pub-year">2023</p>
+            <h3 class="pub-title">From Judgement's Premises Towards Key Points</h3>
+            <p class="pub-venue">arXiv</p>
+            <p class="pub-summary">Extracting key points from legal documents using NLP techniques including BERT, IBM Debater, and graph-based approaches.</p>
+            <div class="pub-links">
+              <a href="https://arxiv.org/abs/2212.12238" target="_blank" class="pub-link">📄 arXiv</a>
+              <a href="https://arxiv.org/pdf/2212.12238.pdf" target="_blank" class="pub-link">📋 PDF</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="footer-text">© 2026 Rayen Dhahri — Built with <span class="heart">♥</span> and too much coffee</p>
+        <div class="footer-links">
+          <a href="https://github.com/Heatdh" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/rayen-dh" target="_blank">LinkedIn</a>
+          <a href="mailto:rayendhahri@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
