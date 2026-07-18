@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — Rayen Dhahri</title>
-  <meta name="description" content="Blog posts by Rayen Dhahri — Efficient AI, ML research, and engineering insights.">
+  <meta name="description" content="Blog by Rayen Dhahri — practical writing on efficient AI, model compression, LLM optimization, and lessons from deploying ML in production.">
+  <link rel="canonical" href="https://rayendhahri.com/blog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog — Rayen Dhahri">
+  <meta property="og:description" content="Practical writing on efficient AI, model compression, LLM optimization, and lessons from deploying ML in production.">
+  <meta property="og:url" content="https://rayendhahri.com/blog.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="Rayen Dhahri — Blog" href="https://rayendhahri.com/feed.xml">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
@@ -16,7 +22,6 @@
   <canvas id="particles-canvas"></canvas>
   <div class="bg-glow bg-glow-1"></div>
   <div class="bg-glow bg-glow-2"></div>
-  <div class="kanji-watermark">ブログ</div>
 
   <nav class="navbar">
     <div class="nav-container">
@@ -38,21 +43,37 @@
       <div class="container">
         <div class="section-header reveal">
           <p class="section-label">Blog</p>
-          <h1 class="section-title">Thoughts & Write-ups</h1>
-          <p class="section-subtitle">Practical notes on efficient AI, research insights, and engineering lessons from the trenches.</p>
-          <div class="anime-line"></div>
+          <h1 class="section-title">Notes on Efficient AI</h1>
+          <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">Practical write-ups on model compression, LLM optimization, edge deployment, and lessons learned shipping ML in production.</p>
+          <div class="anime-line" style="margin: 1rem auto 0;"></div>
+        </div>
+        <div class="reveal mt-2" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+          <a href="feed.xml" class="btn btn-outline btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>
+            Subscribe via RSS
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section" style="padding-top: 0;">
+    <section class="section" style="padding-top: 1rem;">
       <div class="container">
+
+        <!-- Topic filter -->
+        <div class="filter-bar reveal" style="justify-content: center;">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="efficient-ai">Efficient AI</button>
+          <button class="filter-btn" data-filter="llm">LLMs</button>
+          <button class="filter-btn" data-filter="deployment">Deployment</button>
+          <button class="filter-btn" data-filter="research">Research Notes</button>
+        </div>
+
         <div class="blog-grid stagger-children">
 
-          <a href="blog/2026-02-24-welcome.html" class="glass-card blog-card" style="text-decoration:none;">
+          <a href="blog/2026-02-24-welcome.html" class="glass-card blog-card" data-category="research" style="text-decoration:none;">
             <p class="blog-date">Feb 24, 2026</p>
-            <h3 class="blog-title">Welcome to my blog</h3>
-            <p class="blog-excerpt">This blog will cover efficient deep learning and compression methods, practical lessons from industry ML deployment, and research notes on LLM optimization and sparsity.</p>
+            <h3 class="blog-title">Welcome to the blog</h3>
+            <p class="blog-excerpt">What to expect here: efficient deep learning and compression methods, practical lessons from industry ML deployment, and research notes on LLM optimization and sparsity.</p>
             <div class="blog-tags">
               <span class="tag">ml</span>
               <span class="tag">efficient-ai</span>
@@ -64,13 +85,37 @@
             </span>
           </a>
 
-          <!-- Add more blog cards here as you write posts -->
+          <!--
+            ── HOW TO ADD A POST ─────────────────────────────────────────
+            1. Copy blog/_post-template.html to blog/YYYY-MM-DD-slug.html
+            2. Fill in the title, date, tags, and content
+            3. Copy the card below, update it, and paste it at the TOP of
+               this grid (newest first). Pick data-category from:
+               efficient-ai | llm | deployment | research
+            4. Update the "Latest Posts" card on index.html
+            5. Add an <item> to feed.xml and a <url> to sitemap.xml
+
+          <a href="blog/YYYY-MM-DD-slug.html" class="glass-card blog-card" data-category="efficient-ai" style="text-decoration:none;">
+            <p class="blog-date">Mon DD, YYYY</p>
+            <h3 class="blog-title">Post title</h3>
+            <p class="blog-excerpt">One or two sentence summary of the post.</p>
+            <div class="blog-tags">
+              <span class="tag">tag-1</span>
+              <span class="tag">tag-2</span>
+            </div>
+            <span class="blog-read-more">
+              Read more
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+            ──────────────────────────────────────────────────────────────
+          -->
 
         </div>
 
         <div class="text-center mt-4 reveal" style="padding: 2rem 0;">
-          <p style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.85rem;">
-            // more posts coming soon...
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            New posts are published regularly — subscribe via <a href="feed.xml">RSS</a> to get them first.
           </p>
         </div>
       </div>
@@ -80,11 +125,12 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2026 Rayen Dhahri — Built with <span class="heart">♥</span> and too much coffee</p>
+        <p class="footer-text">© 2026 Rayen Dhahri · Machine Learning Research Scientist · Munich</p>
         <div class="footer-links">
-          <a href="https://github.com/Heatdh" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/rayen-dh" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:rayendhahri@gmail.com">Email</a>
+          <a href="feed.xml">RSS</a>
         </div>
       </div>
     </div>

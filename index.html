@@ -3,9 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rayen Dhahri | ML Research Engineer</title>
-  <meta name="description" content="Rayen Dhahri — Machine Learning Research Engineer specializing in Neural Network Optimization, LLMs, and Efficient AI.">
+  <title>Rayen Dhahri | Machine Learning Research Scientist</title>
+  <meta name="description" content="Rayen Dhahri — Machine Learning Research Scientist specializing in efficient AI: model compression, quantization, and edge deployment of vision and language models. Published at NeurIPS.">
   <meta name="author" content="Rayen Dhahri">
+  <link rel="canonical" href="https://rayendhahri.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rayen Dhahri | Machine Learning Research Scientist">
+  <meta property="og:description" content="Efficient AI research — model compression, quantization, and edge deployment of vision and language models. Published at NeurIPS.">
+  <meta property="og:url" content="https://rayendhahri.com/">
+  <meta name="twitter:card" content="summary">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +23,10 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- Favicon (emoji fallback) -->
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="Rayen Dhahri — Blog" href="https://rayendhahri.com/feed.xml">
+
+  <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 </head>
 <body>
@@ -30,7 +41,6 @@
   <div class="bg-glow bg-glow-1"></div>
   <div class="bg-glow bg-glow-2"></div>
   <div class="bg-glow bg-glow-3"></div>
-  <div class="kanji-watermark">機械学習</div>
 
   <!-- Navigation -->
   <nav class="navbar">
@@ -62,13 +72,13 @@
 
           <!-- Text Side -->
           <div class="hero-text reveal">
-            <p class="hero-greeting"><span class="wave">👋</span> konnichiwa, I'm</p>
+            <p class="hero-greeting">Hello, I'm</p>
             <h1 class="hero-name">
               <span class="name-gradient">Rayen Dhahri</span>
             </h1>
             <p class="hero-title"><span class="typed-text"></span></p>
             <p class="hero-desc">
-              I build efficient AI — optimizing neural networks through sparsification, quantization, and distillation for real-world deployment on constrained hardware. Published at NeurIPS, worked with Zeiss, BMW, Huawei, Intel, and more.
+              I make state-of-the-art AI run where it matters — compressing and deploying vision and language models on constrained hardware through quantization, pruning, and distillation. Machine Learning Research Scientist in Munich, published at NeurIPS, with industry experience across optics, automotive, and semiconductor leaders.
             </p>
             <div class="hero-actions">
               <a href="projects.html" class="btn btn-primary">
@@ -77,7 +87,7 @@
               </a>
               <a href="blog.html" class="btn btn-outline">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                Read Blog
+                Read the Blog
               </a>
             </div>
             <div class="hero-socials">
@@ -98,12 +108,26 @@
 
           <!-- Visual Side -->
           <div class="hero-visual reveal">
-            <div class="hero-avatar-wrapper">
-              <div class="hero-avatar-ring"></div>
-              <img src="assets/img/goku_jump.gif" alt="Goku on Nimbus" class="hero-goku-gif">
-              <div class="floating-badge">Model Compression</div>
-              <div class="floating-badge">Bayesian Deep Learning</div>
-              <div class="floating-badge">On-Device AI</div>
+            <div class="hero-card-wrapper">
+              <div class="glass-card terminal-card">
+                <div class="terminal-bar">
+                  <span class="term-dot red"></span>
+                  <span class="term-dot yellow"></span>
+                  <span class="term-dot green"></span>
+                  <span class="terminal-title">profile.yaml</span>
+                </div>
+                <div class="terminal-body">
+                  <div><span class="t-key">role:</span> <span class="t-str">ML Research Scientist</span></div>
+                  <div><span class="t-key">focus:</span> [<span class="t-str">efficient-ai</span>, <span class="t-str">quantization</span>, <span class="t-str">edge</span>]</div>
+                  <div><span class="t-key">models:</span> [<span class="t-str">vision</span>, <span class="t-str">llms</span>, <span class="t-str">multimodal</span>]</div>
+                  <div><span class="t-key">venues:</span> [<span class="t-str">NeurIPS</span>, <span class="t-str">EurIPS</span>, <span class="t-str">AABI</span>]</div>
+                  <div><span class="t-key">location:</span> <span class="t-str">Munich, DE</span></div>
+                  <div><span class="t-comment"># research that ships</span> <span class="terminal-cursor"></span></div>
+                </div>
+              </div>
+              <div class="floating-badge fb-1">Model Compression</div>
+              <div class="floating-badge fb-2">Bayesian Deep Learning</div>
+              <div class="floating-badge fb-3">On-Device AI</div>
             </div>
           </div>
 
@@ -121,23 +145,23 @@
         <div class="highlights-grid stagger-children">
           <div class="glass-card highlight-card">
             <span class="highlight-icon">🧠</span>
-            <h3 class="highlight-title">Neural Network Optimization</h3>
-            <p class="highlight-desc">Sparsification, pruning, and compression of deep learning models for efficient deployment.</p>
+            <h3 class="highlight-title">Model Optimization</h3>
+            <p class="highlight-desc">Quantization (PTQ/QAT), pruning, sparsification, and distillation of deep networks — from foundation models to production-grade deployments.</p>
           </div>
           <div class="glass-card highlight-card">
             <span class="highlight-icon">⚡</span>
-            <h3 class="highlight-title">LLM Efficiency</h3>
-            <p class="highlight-desc">Making large language models faster and lighter through quantization, distillation, and structured sparsity.</p>
+            <h3 class="highlight-title">LLM & VLM Efficiency</h3>
+            <p class="highlight-desc">Making large language and vision-language models faster and lighter with low-bit inference, structured sparsity, and kernel-level optimization.</p>
           </div>
           <div class="glass-card highlight-card">
             <span class="highlight-icon">📡</span>
-            <h3 class="highlight-title">Edge AI Deployment</h3>
-            <p class="highlight-desc">Deploying optimized models on constrained devices — Jetson, FPGAs, microcontrollers, and more.</p>
+            <h3 class="highlight-title">Edge & Accelerator Deployment</h3>
+            <p class="highlight-desc">NPU-first deployment on Jetson, Hailo, Rockchip, and other accelerators — with hard latency, memory, and energy budgets.</p>
           </div>
           <div class="glass-card highlight-card">
             <span class="highlight-icon">📝</span>
             <h3 class="highlight-title">Research & Publications</h3>
-            <p class="highlight-desc">Published at NeurIPS '24 & '25, AABI — Bayesian sparsification, Quant-Trim, and scalable sparse models.</p>
+            <p class="highlight-desc">Published at NeurIPS 2024, EurIPS 2025, and AABI. Reviewer for top ML venues. Active work on efficient AI for the edge.</p>
           </div>
         </div>
       </div>
@@ -149,13 +173,13 @@
         <div class="section-header reveal">
           <p class="section-label">Blog</p>
           <h2 class="section-title">Latest Posts</h2>
-          <p class="section-subtitle">Thoughts on efficient AI, research notes, and engineering lessons.</p>
+          <p class="section-subtitle">Practical notes on efficient AI, model compression, and lessons from deploying ML in production.</p>
         </div>
         <div class="blog-grid stagger-children">
           <a href="blog/2026-02-24-welcome.html" class="glass-card blog-card" style="text-decoration:none;">
             <p class="blog-date">Feb 24, 2026</p>
-            <h3 class="blog-title">Welcome to my blog</h3>
-            <p class="blog-excerpt">This blog will cover efficient deep learning, practical lessons from industry ML deployment, and research notes on LLM optimization and sparsity.</p>
+            <h3 class="blog-title">Welcome to the blog</h3>
+            <p class="blog-excerpt">What to expect here: efficient deep learning and compression methods, practical lessons from industry ML deployment, and research notes on LLM optimization and sparsity.</p>
             <div class="blog-tags">
               <span class="tag">ml</span>
               <span class="tag">efficient-ai</span>
@@ -180,12 +204,13 @@
     <div class="container">
       <div class="footer-content">
         <p class="footer-text">
-          © 2026 Rayen Dhahri — Built with <span class="heart">♥</span> and too much coffee
+          © 2026 Rayen Dhahri · Machine Learning Research Scientist · Munich
         </p>
         <div class="footer-links">
           <a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a>
           <a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:rayendhahri@gmail.com">Email</a>
+          <a href="feed.xml">RSS</a>
         </div>
       </div>
     </div>

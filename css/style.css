@@ -1,5 +1,5 @@
 /* ============================================
-   RAYEN DHAHRI — Anime-Dark Theme
+   RAYEN DHAHRI — Dark Professional Theme
    Pure CSS, no dependencies
    ============================================ */
 
@@ -486,24 +486,6 @@ img {
   box-shadow: 0 0 40px rgba(139, 92, 246, 0.2), 0 0 80px rgba(0, 212, 255, 0.1);
 }
 
-.hero-goku-gif {
-  width: 120%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter: drop-shadow(0 0 25px rgba(0, 212, 255, 0.4)) drop-shadow(0 0 50px rgba(139, 92, 246, 0.2));
-  animation: goku-float 4s ease-in-out infinite;
-  z-index: 2;
-  pointer-events: none;
-}
-
-@keyframes goku-float {
-  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
-  50% { transform: translate(-50%, -50%) translateY(-12px); }
-}
-
 /* Credly Badges */
 .credly-badges {
   margin: 1rem 0 1.5rem;
@@ -579,21 +561,21 @@ img {
   animation: float 3s ease-in-out infinite;
 }
 
-.floating-badge:nth-child(3) {
-  top: 10%;
-  right: -30px;
+.floating-badge.fb-1 {
+  top: -16px;
+  right: -18px;
   animation-delay: 0s;
 }
 
-.floating-badge:nth-child(4) {
-  bottom: 15%;
-  left: -40px;
+.floating-badge.fb-2 {
+  bottom: -16px;
+  left: -18px;
   animation-delay: 1s;
 }
 
-.floating-badge:nth-child(5) {
-  bottom: 5%;
-  right: -20px;
+.floating-badge.fb-3 {
+  bottom: -16px;
+  right: -18px;
   animation-delay: 2s;
 }
 
@@ -1312,6 +1294,9 @@ img {
 .stagger-children.visible > *:nth-child(9) { transition-delay: 0.45s; opacity: 1; transform: translateY(0); }
 .stagger-children.visible > *:nth-child(10) { transition-delay: 0.5s; opacity: 1; transform: translateY(0); }
 
+/* Fallback so children beyond the 10th are never left hidden */
+.stagger-children.visible > * { opacity: 1; transform: translateY(0); }
+
 /* --- About Page --- */
 .about-grid {
   display: grid;
@@ -1455,18 +1440,114 @@ img {
   border-top: none;
 }
 
-/* Kanji watermark */
-.kanji-watermark {
-  position: fixed;
-  font-size: 15rem;
-  font-weight: 900;
-  color: rgba(139, 92, 246, 0.02);
-  z-index: 0;
-  pointer-events: none;
-  writing-mode: vertical-rl;
-  right: 5%;
-  top: 20%;
-  user-select: none;
+/* --- Hero Terminal Card --- */
+.hero-card-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+}
+
+.terminal-card {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  font-family: var(--font-mono);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45), 0 0 40px rgba(0, 212, 255, 0.06);
+}
+
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--border-glass);
+}
+
+.term-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.term-dot.red { background: #ff5f57; }
+.term-dot.yellow { background: #febc2e; }
+.term-dot.green { background: #28c840; }
+
+.terminal-title {
+  margin-left: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+.terminal-body {
+  padding: 1.5rem 1.5rem 1.75rem;
+  font-size: 0.85rem;
+  line-height: 2;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.terminal-body .t-key {
+  color: var(--accent-purple);
+}
+
+.terminal-body .t-str {
+  color: var(--accent-cyan);
+}
+
+.terminal-body .t-comment {
+  color: var(--text-muted);
+}
+
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1rem;
+  background: var(--accent-blue);
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+
+/* --- Blog Post Extras --- */
+.post-content pre {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.post-content img {
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-glass);
+  margin: 1rem 0;
+}
+
+.post-content a {
+  border-bottom: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.post-footer-nav {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid var(--border-glass);
+  flex-wrap: wrap;
 }
 
 /* --- Responsive --- */
@@ -1500,6 +1581,11 @@ img {
   .hero-avatar-wrapper {
     width: 250px;
     height: 250px;
+  }
+
+  .hero-card-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .about-grid {

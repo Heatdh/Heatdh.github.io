@@ -68,11 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const typedEl = document.querySelector('.typed-text');
   if (typedEl) {
     const strings = [
-      'ML Research Engineer',
-      'Neural Network Optimizer',
-      'Efficient AI Enthusiast',
-      'LLM Whisperer',
-      'Edge AI Developer'
+      'Machine Learning Research Scientist',
+      'Efficient AI & Model Compression',
+      'Edge & On-Device Inference',
+      'Computer Vision & LLMs'
     ];
     let stringIndex = 0;
     let charIndex = 0;
@@ -224,9 +223,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- Project Filter ---
+  // --- Category Filter (projects & blog) ---
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectCards = document.querySelectorAll('.project-card[data-category]');
+  const projectCards = document.querySelectorAll('.glass-card[data-category]');
 
   if (filterBtns.length && projectCards.length) {
     filterBtns.forEach(btn => {

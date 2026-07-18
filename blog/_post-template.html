@@ -1,15 +1,27 @@
 <!DOCTYPE html>
+<!--
+  ═══════════════════════════════════════════════════════════════
+  BLOG POST TEMPLATE — how to publish a new post:
+
+  1. Copy this file to blog/YYYY-MM-DD-your-slug.html
+  2. Replace every {{PLACEHOLDER}} below
+  3. Add a post card to blog.html (newest first — see the comment
+     in that file) and update the "Latest Posts" card on index.html
+  4. Add an <item> to feed.xml and a <url> to sitemap.xml
+  5. Delete this comment block if you like
+  ═══════════════════════════════════════════════════════════════
+-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to the blog — Rayen Dhahri</title>
-  <meta name="description" content="Welcome post — what this blog will cover: efficient deep learning, industry ML deployment lessons, and research notes on LLM optimization and sparsity.">
-  <link rel="canonical" href="https://rayendhahri.com/blog/2026-02-24-welcome.html">
+  <title>{{POST_TITLE}} — Rayen Dhahri</title>
+  <meta name="description" content="{{POST_EXCERPT}}">
+  <link rel="canonical" href="https://rayendhahri.com/blog/{{POST_FILENAME}}.html">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Welcome to the blog — Rayen Dhahri">
-  <meta property="og:description" content="What this blog will cover: efficient deep learning, industry ML deployment lessons, and research notes on LLM optimization and sparsity.">
-  <meta property="og:url" content="https://rayendhahri.com/blog/2026-02-24-welcome.html">
+  <meta property="og:title" content="{{POST_TITLE}} — Rayen Dhahri">
+  <meta property="og:description" content="{{POST_EXCERPT}}">
+  <meta property="og:url" content="https://rayendhahri.com/blog/{{POST_FILENAME}}.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -42,34 +54,37 @@
       <header class="post-header">
         <div class="container">
           <p class="post-meta">
-            <span>Feb 24, 2026</span> &nbsp;·&nbsp;
-            <span>ml, efficient-ai, research</span>
+            <span>{{POST_DATE, e.g. Mar 15, 2026}}</span> &nbsp;·&nbsp;
+            <span>{{tag-1, tag-2}}</span>
           </p>
-          <h1 class="post-title">Welcome to the blog</h1>
-          <p class="section-subtitle" style="text-align:center; margin: 0 auto;">What I'll write about here</p>
+          <h1 class="post-title">{{POST_TITLE}}</h1>
+          <p class="section-subtitle" style="text-align:center; margin: 0 auto;">{{POST_SUBTITLE — one line}}</p>
           <div class="anime-line" style="margin: 1.5rem auto;"></div>
         </div>
       </header>
 
       <div class="container">
         <div class="post-content">
-          <p>Welcome! I'm excited to start sharing my thoughts, research notes, and practical insights in this space.</p>
+          <p>{{Opening paragraph — hook the reader with the problem or result.}}</p>
 
-          <p>This blog will primarily cover:</p>
+          <h2>{{Section heading}}</h2>
+          <p>{{Body text. Use <code>inline code</code> for identifiers.}}</p>
 
-          <ul>
-            <li><strong>Efficient deep learning and compression methods</strong> — pruning, quantization, distillation, and structured sparsity techniques that make neural networks smaller and faster without sacrificing performance.</li>
-            <li><strong>Practical lessons from industry ML deployment</strong> — real-world challenges and solutions from deploying models at companies like Zeiss, BMW, Huawei, and Intel.</li>
-            <li><strong>Research notes on LLM optimization and sparsity</strong> — deep dives into recent papers, including my own work on Bayesian sparsification published at NeurIPS.</li>
-          </ul>
-
-          <p>I'll publish short, practical write-ups and research-oriented posts regularly. The goal is to bridge the gap between academic research and practical engineering — making efficient AI more accessible to everyone.</p>
+          <pre><code>{{# code blocks look like this
+def example():
+    return "hello"}}</code></pre>
 
           <blockquote>
-            "The best model is not the biggest one — it's the one that solves the problem within your constraints."
+            {{Optional pull quote or key takeaway.}}
           </blockquote>
 
-          <p>Stay tuned for the first technical post. In the meantime, feel free to check out my <a href="../projects.html">projects</a> or <a href="../publications.html">publications</a>, and subscribe via <a href="../feed.xml">RSS</a> to get new posts as they land.</p>
+          <h2>{{Another section}}</h2>
+          <ul>
+            <li>{{Bullet point}}</li>
+            <li>{{Bullet point}}</li>
+          </ul>
+
+          <p>{{Closing paragraph — summary and what's next.}}</p>
 
           <p>— Rayen</p>
         </div>

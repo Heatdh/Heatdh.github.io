@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rayen Dhahri — Blog</title>
+    <link>https://rayendhahri.com/blog.html</link>
+    <description>Practical writing on efficient AI, model compression, LLM optimization, and lessons from deploying ML in production.</description>
+    <language>en</language>
+    <atom:link href="https://rayendhahri.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <!--
+      To add a post: copy the <item> block below, update the fields,
+      and place the newest item first.
+    -->
+
+    <item>
+      <title>Welcome to the blog</title>
+      <link>https://rayendhahri.com/blog/2026-02-24-welcome.html</link>
+      <guid>https://rayendhahri.com/blog/2026-02-24-welcome.html</guid>
+      <pubDate>Tue, 24 Feb 2026 09:00:00 +0100</pubDate>
+      <description>What to expect here: efficient deep learning and compression methods, practical lessons from industry ML deployment, and research notes on LLM optimization and sparsity.</description>
+    </item>
+
+  </channel>
+</rss>
