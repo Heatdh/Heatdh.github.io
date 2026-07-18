@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Publications — Rayen Dhahri</title>
-  <meta name="description" content="Research publications by Rayen Dhahri — NeurIPS, AABI, arXiv.">
+  <meta name="description" content="Research publications by Rayen Dhahri — NeurIPS, EurIPS, AABI, arXiv. Efficient AI, Bayesian sparsification, and quantization.">
+  <link rel="canonical" href="https://rayendhahri.com/publications.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Publications — Rayen Dhahri">
+  <meta property="og:description" content="Research publications — NeurIPS, EurIPS, AABI, arXiv. Efficient AI, Bayesian sparsification, and quantization.">
+  <meta property="og:url" content="https://rayendhahri.com/publications.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -16,7 +21,6 @@
   <canvas id="particles-canvas"></canvas>
   <div class="bg-glow bg-glow-1"></div>
   <div class="bg-glow bg-glow-2"></div>
-  <div class="kanji-watermark">研究論文</div>
 
   <nav class="navbar">
     <div class="nav-container">
@@ -39,15 +43,15 @@
         <div class="section-header reveal">
           <p class="section-label">Publications</p>
           <h1 class="section-title">Research & Papers</h1>
-          <p class="section-subtitle">Sharing my work with the research community.</p>
+          <p class="section-subtitle">Peer-reviewed work on efficient AI — Bayesian sparsification, quantization, and deployment-robust model compression.</p>
           <div class="anime-line"></div>
         </div>
         <div class="reveal mt-4" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
-          <a href="https://scholar.google.com/scholar?q=Rayen+Dhahri" target="_blank" class="btn btn-outline">
+          <a href="https://scholar.google.com/scholar?q=Rayen+Dhahri" target="_blank" rel="noopener" class="btn btn-outline">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:4px"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
             Google Scholar
           </a>
-          <a href="https://arxiv.org/search/?query=Rayen+Dhahri&searchtype=author" target="_blank" class="btn btn-outline">arXiv Profile</a>
+          <a href="https://arxiv.org/search/?query=Rayen+Dhahri&searchtype=author" target="_blank" rel="noopener" class="btn btn-outline">arXiv Profile</a>
         </div>
       </div>
     </section>
@@ -56,15 +60,23 @@
       <div class="container">
         <div class="publications-list stagger-children">
 
+          <!-- Under review -->
+          <div class="glass-card pub-card">
+            <p class="pub-year">2026 · Under Review</p>
+            <h3 class="pub-title">Efficient Image Enhancement on the Edge</h3>
+            <p class="pub-venue">Submitted to NeurIPS 2026 (first author)</p>
+            <p class="pub-summary">First-author work on state-of-the-art image enhancement designed for edge deployment, conducted within the INSAIT / ETH Zurich research ecosystem in collaboration with academic and industry partners. Details to follow upon publication.</p>
+          </div>
+
           <!-- 2025 -->
           <div class="glass-card pub-card">
             <p class="pub-year">2025</p>
-            <h3 class="pub-title">Quant-Trim: Hardware-Neutral Quantization-Robust Checkpoints via Progressive Fake Quantization and Reverse Pruning</h3>
+            <h3 class="pub-title">Quant-Trim in Practice: Improved Cross-Platform Low-Bit Deployment on Edge NPUs</h3>
             <p class="pub-venue">EurIPS 2025</p>
             <p class="pub-summary">A training-phase method producing hardware-neutral checkpoints robust to backend and precision choices. Combines progressive fake quantization with reverse pruning to tame outlier-driven scale inflation. Agnostic to quantization schemes (symmetric/asymmetric, per-tensor/per-channel, INT8/INT4), requires no vendor-specific graph changes, and avoids per-backend retraining.</p>
             <div class="pub-links">
-              <a href="https://arxiv.org/abs/2511.15300" target="_blank" class="pub-link">📄 arXiv</a>
-              <a href="https://arxiv.org/pdf/2511.15300" target="_blank" class="pub-link">📋 PDF</a>
+              <a href="https://arxiv.org/abs/2511.15300" target="_blank" rel="noopener" class="pub-link">📄 arXiv</a>
+              <a href="https://arxiv.org/pdf/2511.15300" target="_blank" rel="noopener" class="pub-link">📋 PDF</a>
             </div>
           </div>
 
@@ -72,21 +84,11 @@
           <div class="glass-card pub-card">
             <p class="pub-year">2024</p>
             <h3 class="pub-title">Shaving Weights with Occam's Razor: Bayesian Sparsification for Neural Networks Using the Marginal Likelihood</h3>
-            <p class="pub-venue">NeurIPS 2024</p>
-            <p class="pub-summary">A principled Bayesian approach to neural network sparsification using the marginal likelihood, achieving state-of-the-art compression while maintaining model performance.</p>
+            <p class="pub-venue">NeurIPS 2024 (Main Track) & AABI 2024</p>
+            <p class="pub-summary">A principled Bayesian approach to neural network sparsification using the marginal likelihood, achieving state-of-the-art compression while maintaining model performance — with applications to vision transformers and LLMs.</p>
             <div class="pub-links">
-              <a href="https://openreview.net/forum?id=jYOd0K74PB" target="_blank" class="pub-link">📄 Paper</a>
-              <a href="https://openreview.net/forum?id=jYOd0K74PB" target="_blank" class="pub-link">🔗 OpenReview</a>
-            </div>
-          </div>
-
-          <div class="glass-card pub-card">
-            <p class="pub-year">2024</p>
-            <h3 class="pub-title">Scaling Sparse Models with OPD</h3>
-            <p class="pub-venue">AABI 2024</p>
-            <p class="pub-summary">Structured sparsity approaches for vision transformers and large language models, extending Bayesian methods to modern architectures at scale.</p>
-            <div class="pub-links">
-              <span class="pub-link" style="opacity:0.5">🔗 Link coming soon</span>
+              <a href="https://neurips.cc/virtual/2024/poster/95142" target="_blank" rel="noopener" class="pub-link">📄 NeurIPS</a>
+              <a href="https://openreview.net/forum?id=jYOd0K74PB" target="_blank" rel="noopener" class="pub-link">🔗 OpenReview (AABI)</a>
             </div>
           </div>
 
@@ -95,13 +97,24 @@
             <p class="pub-year">2023</p>
             <h3 class="pub-title">From Judgement's Premises Towards Key Points</h3>
             <p class="pub-venue">arXiv</p>
-            <p class="pub-summary">Extracting key points from legal documents using NLP techniques including BERT, IBM Debater, and graph-based approaches.</p>
+            <p class="pub-summary">Advanced NLP methods for extracting key points from legal texts, enhancing automated document analysis with BERT, IBM Debater, and graph-based approaches.</p>
             <div class="pub-links">
-              <a href="https://arxiv.org/abs/2212.12238" target="_blank" class="pub-link">📄 arXiv</a>
-              <a href="https://arxiv.org/pdf/2212.12238.pdf" target="_blank" class="pub-link">📋 PDF</a>
+              <a href="https://arxiv.org/abs/2212.12238" target="_blank" rel="noopener" class="pub-link">📄 arXiv</a>
+              <a href="https://arxiv.org/pdf/2212.12238.pdf" target="_blank" rel="noopener" class="pub-link">📋 PDF</a>
             </div>
           </div>
 
+        </div>
+
+        <!-- Academic Service -->
+        <div class="section-header reveal" style="margin-top: 4rem;">
+          <p class="section-label">Academic Service</p>
+          <h2 class="section-title" style="font-size: 1.5rem;">Reviewing</h2>
+        </div>
+        <div class="glass-card reveal" style="padding: 2rem;">
+          <p class="pub-summary" style="margin-bottom: 0;">
+            Scientific reviewer for top-tier machine learning conferences (<strong>ICML</strong>, <strong>NeurIPS</strong>) and journals (<strong>JAIR</strong>), covering probabilistic inference, compression, efficient AI, computer vision, and LLMs.
+          </p>
         </div>
       </div>
     </section>
@@ -110,11 +123,12 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p class="footer-text">© 2026 Rayen Dhahri — Built with <span class="heart">♥</span> and too much coffee</p>
+        <p class="footer-text">© 2026 Rayen Dhahri · Machine Learning Research Scientist · Munich</p>
         <div class="footer-links">
-          <a href="https://github.com/Heatdh" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/rayen-dh" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a>
           <a href="mailto:rayendhahri@gmail.com">Email</a>
+          <a href="feed.xml">RSS</a>
         </div>
       </div>
     </div>
