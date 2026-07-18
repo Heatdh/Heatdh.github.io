@@ -30,3 +30,5 @@ js/main.js          Particles, scroll reveal, nav, typing, filters
 
 - No build step, no dependencies — everything is hand-rolled and served statically.
 - The `.stagger-children` / `.reveal` classes handle scroll animations; new cards get them for free inside existing grids.
+- **Dark/light theme**: toggled from the navbar, persisted in `localStorage`, defaults to the visitor's OS preference. Every page needs the small inline theme script in `<head>` (copy it from any existing page — the post template already has it).
+- **Motion & no-JS**: animations respect `prefers-reduced-motion`, and a `<noscript>` block keeps content visible when JavaScript is off.
