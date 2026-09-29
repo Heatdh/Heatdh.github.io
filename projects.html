@@ -69,6 +69,33 @@
 
         <div class="featured-projects stagger-children">
 
+          <!-- PhysDNet -->
+          <div class="glass-card featured-card">
+            <div class="featured-content">
+              <div class="featured-badge">NeurIPS 2026 · First Author</div>
+              <h3 class="featured-title">PhysDNet: Physics-Driven Real-Time Image Dehazing on the Edge</h3>
+              <figure class="pub-teaser">
+                <img src="assets/img/physdnet-teaser.png" alt="PhysDNet architecture: NIR and sparse LiDAR encoders merged by gated fusion, feeding a deployed direct head and a training-only physics head" width="1692" height="492" loading="lazy">
+              </figure>
+              <p class="featured-desc">
+                Modern dehazing networks are heavy and overfit to synthetic haze. <strong>PhysDNet</strong> fuses time-gated NIR imagery with sparse LiDAR depth through mask-aware gating, and trains with a physics-constrained dual head: backpropagating through a fixed Koschmieder inversion scales gradients by (t+ε)<sup>−2</sup>, focusing learning on the densest haze at zero inference cost. Built for fixed-function NPUs, using only edge-friendly operators. Developed in collaboration with the groups of Luca Benini (ETH Zurich) and Luc Van Gool (INSAIT), under an EU Horizon Europe grant.
+              </p>
+              <div class="featured-metrics">
+                <div class="metric"><span class="metric-value">+1.67 dB</span><span class="metric-label">PSNR vs. prior SOTA</span></div>
+                <div class="metric"><span class="metric-value">5.2× less</span><span class="metric-label">Compute</span></div>
+                <div class="metric"><span class="metric-value">29–99 FPS</span><span class="metric-label">NPU, under 4 W</span></div>
+                <div class="metric"><span class="metric-value">54.9%</span><span class="metric-label">Detection loss recovered</span></div>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Multimodal Fusion</span><span class="tag">NIR + LiDAR</span><span class="tag">Physics-Guided Learning</span><span class="tag">INT8 NPU</span><span class="tag">Edge Vision</span>
+              </div>
+              <div class="featured-links">
+                <a href="publications.html" class="btn btn-primary btn-sm">📄 Paper Details</a>
+                <a href="https://anonymous.4open.science/r/PhysDNet-1D62/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">💻 Code</a>
+              </div>
+            </div>
+          </div>
+
           <!-- Quant-Trim -->
           <div class="glass-card featured-card">
             <div class="featured-content">

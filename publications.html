@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#f4f5fa">
   <script>(function(){var t=null;try{t=localStorage.getItem('theme');}catch(e){}if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);})();</script>
   <title>Publications — Rayen Dhahri</title>
-  <meta name="description" content="Research publications by Rayen Dhahri — NeurIPS, EurIPS, AABI, arXiv. Efficient AI, Bayesian sparsification, and quantization.">
+  <meta name="description" content="Research publications by Rayen Dhahri — NeurIPS 2026, NeurIPS 2024, EurIPS, AABI. PhysDNet, Bayesian sparsification, and quantization for efficient AI.">
   <link rel="canonical" href="https://rayendhahri.com/publications.html">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Publications — Rayen Dhahri">
@@ -54,7 +54,7 @@
         <div class="section-header reveal">
           <p class="section-label">Publications</p>
           <h1 class="section-title">Research & Papers</h1>
-          <p class="section-subtitle">Peer-reviewed work on efficient AI — Bayesian sparsification, quantization, and deployment-robust model compression.</p>
+          <p class="section-subtitle">Peer-reviewed work on efficient AI — physics-guided edge vision, Bayesian sparsification, quantization, and deployment-robust model compression.</p>
           <div class="anime-line"></div>
         </div>
         <div class="reveal mt-4" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
@@ -71,12 +71,21 @@
       <div class="container">
         <div class="publications-list stagger-children">
 
-          <!-- Under review -->
-          <div class="glass-card pub-card">
-            <p class="pub-year">2026 · Under Review</p>
-            <h3 class="pub-title">Efficient Image Enhancement on the Edge</h3>
-            <p class="pub-venue">Submitted to NeurIPS 2026 (first author)</p>
-            <p class="pub-summary">First-author work on state-of-the-art image enhancement designed for edge deployment, conducted within the INSAIT / ETH Zurich research ecosystem in collaboration with academic and industry partners. Details to follow upon publication.</p>
+          <!-- 2026 -->
+          <div class="glass-card pub-card pub-card-featured">
+            <p class="pub-year">2026 · First Author</p>
+            <h3 class="pub-title">PhysDNet: Physics-Driven Gradient Amplification for Real-Time Image Dehazing</h3>
+            <p class="pub-venue">NeurIPS 2026</p>
+            <p class="pub-authors">Rayen Dhahri et al., with Luca Benini (ETH Zurich) and Luc Van Gool (INSAIT)</p>
+            <figure class="pub-teaser">
+              <img src="assets/img/physdnet-teaser.png" alt="PhysDNet architecture: hazy NIR and sparse LiDAR are encoded separately, merged by mask-aware gated fusion, and decoded into a deployed direct head and a training-only physics head whose Koschmieder inversion amplifies gradients in dense haze" width="1692" height="492" loading="lazy">
+              <figcaption>Multimodal fusion of gated NIR imagery and sparse LiDAR, trained with a physics-constrained dual head. Backpropagating through the Koschmieder inversion amplifies gradients in heavily degraded regions, at zero inference cost.</figcaption>
+            </figure>
+            <p class="pub-summary">A lightweight multimodal dehazing network for real-time edge deployment. Differentiating through a fixed physical inversion induces <strong>density-adaptive gradient amplification</strong>, an implicit curriculum that concentrates learning on the most degraded pixels without adding inference cost. On the Seeing Through Fog benchmark, PhysDNet outperforms prior methods by <strong>+1.67 dB at 5.2× lower compute</strong>, recovers 54.9% of fog-induced detection loss, and runs on fixed-function NPUs at <strong>29–99 FPS under 4 W</strong>.</p>
+            <p class="pub-funding">A collaboration between ETH Zurich and INSAIT, supported by the European Union's Horizon Europe programme (grant agreement 101168521).</p>
+            <div class="pub-links">
+              <a href="https://anonymous.4open.science/r/PhysDNet-1D62/" target="_blank" rel="noopener" class="pub-link">💻 Code & Checkpoints</a>
+            </div>
           </div>
 
           <!-- 2025 -->
