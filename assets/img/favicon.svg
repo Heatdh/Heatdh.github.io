@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#172c30"/><text x="32" y="43" text-anchor="middle" font-family="Georgia,serif" font-size="32" fill="#b8d5b5">R</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Four-star Dragon Ball</title>
+  <defs><radialGradient id="gold" gradientUnits="userSpaceOnUse" cx="21" cy="18" r="48"><stop stop-color="#ffe99d"/><stop offset=".5" stop-color="#ffb638"/><stop offset="1" stop-color="#f07713"/></radialGradient></defs>
+  <circle cx="32" cy="32" r="29" fill="url(#gold)" stroke="#8e4518" stroke-width="2"/>
+  <path d="M13 23A23 23 0 0 1 23 12" fill="none" stroke="#fff5c8" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+  <g fill="#b92318">
+  <polygon points="24.00,19.80 25.29,23.22 28.95,23.39 26.09,25.68 27.06,29.21 24.00,27.20 20.94,29.21 21.91,25.68 19.05,23.39 22.71,23.22"/>
+  <polygon points="40.00,19.80 41.29,23.22 44.95,23.39 42.09,25.68 43.06,29.21 40.00,27.20 36.94,29.21 37.91,25.68 35.05,23.39 38.71,23.22"/>
+  <polygon points="24.00,35.80 25.29,39.22 28.95,39.39 26.09,41.68 27.06,45.21 24.00,43.20 20.94,45.21 21.91,41.68 19.05,39.39 22.71,39.22"/>
+  <polygon points="40.00,35.80 41.29,39.22 44.95,39.39 42.09,41.68 43.06,45.21 40.00,43.20 36.94,45.21 37.91,41.68 35.05,39.39 38.71,39.22"/>
+  </g>
+</svg>
