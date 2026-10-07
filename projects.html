@@ -4,38 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#f4f5fa">
+  <meta name="theme-color" content="#fffaf1">
   <script>(function(){var t=null;try{t=localStorage.getItem('theme');}catch(e){}if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);})();</script>
-  <title>Projects — Rayen Dhahri</title>
-  <meta name="description" content="Projects by Rayen Dhahri — model optimization, edge AI, computer vision, NLP, and robotics across research labs and industry.">
+  <title>Projects & Engineering | Rayen Dhahri</title>
+  <meta name="description" content="Selected engineering projects by Rayen Dhahri: model optimization, edge deployment, perception, and robotics.">
+  <meta name="author" content="Rayen Dhahri">
   <link rel="canonical" href="https://rayendhahri.com/projects.html">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projects — Rayen Dhahri">
-  <meta property="og:description" content="Model optimization, edge AI, computer vision, NLP, and robotics across research labs and industry.">
+  <meta property="og:title" content="Projects & Engineering | Rayen Dhahri">
+  <meta property="og:description" content="Selected engineering projects by Rayen Dhahri: model optimization, edge deployment, perception, and robotics.">
   <meta property="og:url" content="https://rayendhahri.com/projects.html">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="css/research.css">
+  <link rel="stylesheet" href="css/atmosphere.css">
+
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="Rayen Dhahri — Blog" href="https://rayendhahri.com/feed.xml">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <noscript><style>.page-loader{display:none!important}.reveal,.stagger-children>*{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="page-loader"><div class="loader-ring"></div></div>
-  <canvas id="particles-canvas" aria-hidden="true"></canvas>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
-
+<a class="skip-link" href="#main">Skip to content</a>
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo"><span class="logo-accent">R</span>ayen<span class="logo-dot"></span></a>
+      <a href="index.html" class="nav-logo">Rayen Dhahri<span class="logo-dot"></span></a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
+        <li><a href="publications.html">Research</a></li>
+        <li><a href="blog.html">Notes</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
       <div class="nav-right">
@@ -48,123 +59,8 @@
     </div>
   </nav>
 
-  <main class="main-content" id="main">
-    <section class="page-hero">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Research & Engineering</p>
-          <h1 class="section-title">Projects</h1>
-          <p class="section-subtitle">Research-driven work spanning model optimization, edge deployment, perception, and applied ML — shipped at Zeiss, BMW, Huawei, Intel, CARIAD, and academic labs.</p>
-          <div class="anime-line"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured / Flagship Projects -->
-    <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <h2 class="section-title reveal" style="font-size: 1.5rem; margin-bottom: 2rem;">
-          <span class="text-gradient">Featured Research</span>
-        </h2>
-
-        <div class="featured-projects stagger-children">
-
-          <!-- PhysDNet -->
-          <div class="glass-card featured-card">
-            <div class="featured-content">
-              <div class="featured-badge">NeurIPS 2026 Main Track · Accepted · First Author</div>
-              <h3 class="featured-title">PhysDNet: Physics-Driven Real-Time Image Dehazing on the Edge</h3>
-              <figure class="pub-teaser">
-                <img src="assets/img/physdnet-teaser.png" alt="PhysDNet architecture: NIR and sparse LiDAR encoders merged by gated fusion, feeding a deployed direct head and a training-only physics head" width="1692" height="492" loading="lazy">
-              </figure>
-              <p class="featured-desc">
-                Modern dehazing networks are heavy and overfit to synthetic haze. <strong>PhysDNet</strong> fuses time-gated NIR imagery with sparse LiDAR depth through mask-aware gating, and trains with a physics-constrained dual head: backpropagating through a fixed Koschmieder inversion scales gradients by (t+ε)<sup>−2</sup>, focusing learning on the densest haze at zero inference cost. Built for fixed-function NPUs, using only edge-friendly operators. Developed in collaboration with the groups of Luca Benini (ETH Zurich) and Luc Van Gool (INSAIT), under an EU Horizon Europe grant.
-              </p>
-              <div class="featured-metrics">
-                <div class="metric"><span class="metric-value">+1.67 dB</span><span class="metric-label">PSNR vs. prior SOTA</span></div>
-                <div class="metric"><span class="metric-value">5.2× less</span><span class="metric-label">Compute</span></div>
-                <div class="metric"><span class="metric-value">29–99 FPS</span><span class="metric-label">NPU, under 4 W</span></div>
-                <div class="metric"><span class="metric-value">54.9%</span><span class="metric-label">Detection loss recovered</span></div>
-              </div>
-              <div class="project-tags">
-                <span class="tag">Multimodal Fusion</span><span class="tag">NIR + LiDAR</span><span class="tag">Physics-Guided Learning</span><span class="tag">INT8 NPU</span><span class="tag">Edge Vision</span>
-              </div>
-              <div class="featured-links">
-                <a href="publications.html" class="btn btn-primary btn-sm">📄 Paper Details</a>
-                <a href="https://anonymous.4open.science/r/PhysDNet-1D62/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">💻 Code</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Quant-Trim -->
-          <div class="glass-card featured-card">
-            <div class="featured-content">
-              <div class="featured-badge">EurIPS 2025 · First Author</div>
-              <h3 class="featured-title">Quant-Trim: Hardware-Neutral Quantization-Robust Checkpoints</h3>
-              <p class="featured-desc">
-                Edge accelerators rely on low-bit quantization, but vendor compilers differ in scaling, clipping, and kernel support — often as black boxes. The same FP checkpoint yields inconsistent accuracy across backends. <strong>Quant-Trim</strong> introduces a training-phase method that produces hardware-neutral checkpoints robust to backend and precision choices, combining progressive fake quantization with reverse pruning to tame outlier-driven scale inflation. Agnostic to quantization schemes (symmetric/asymmetric, per-tensor/per-channel, INT8/INT4) with no vendor-specific graph changes required.
-              </p>
-              <div class="featured-metrics">
-                <div class="metric"><span class="metric-value">INT4–INT8</span><span class="metric-label">Precision Range</span></div>
-                <div class="metric"><span class="metric-value">Multi-backend</span><span class="metric-label">Hardware Neutral</span></div>
-                <div class="metric"><span class="metric-value">No Retraining</span><span class="metric-label">Per-Backend</span></div>
-              </div>
-              <div class="project-tags">
-                <span class="tag">Quantization</span><span class="tag">Pruning</span><span class="tag">Edge Deployment</span><span class="tag">INT4/INT8</span><span class="tag">PyTorch</span>
-              </div>
-              <div class="featured-links">
-                <a href="https://arxiv.org/abs/2511.15300" target="_blank" class="btn btn-primary btn-sm">📄 Paper (arXiv)</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bayesian Sparsification -->
-          <div class="glass-card featured-card">
-            <div class="featured-content">
-              <div class="featured-badge">NeurIPS 2024 Main Track · First Author</div>
-              <h3 class="featured-title">Bayesian Sparsification via Occam's Razor</h3>
-              <p class="featured-desc">
-                A principled Bayesian approach to neural network sparsification using the marginal likelihood. Achieves state-of-the-art compression ratios while preserving model quality — applied to CNNs, ViTs, and LLMs. Extended at AABI 2024 to structured sparsity for vision transformers and large language models at scale.
-              </p>
-              <div class="featured-metrics">
-                <div class="metric"><span class="metric-value">NeurIPS</span><span class="metric-label">Published '24</span></div>
-                <div class="metric"><span class="metric-value">AABI</span><span class="metric-label">Extended '24</span></div>
-                <div class="metric"><span class="metric-value">SOTA</span><span class="metric-label">Compression</span></div>
-              </div>
-              <div class="project-tags">
-                <span class="tag">Bayesian ML</span><span class="tag">Sparsification</span><span class="tag">Marginal Likelihood</span><span class="tag">LLMs</span><span class="tag">ViTs</span>
-              </div>
-              <div class="featured-links">
-                <a href="https://openreview.net/forum?id=jYOd0K74PB" target="_blank" class="btn btn-primary btn-sm">📄 NeurIPS Paper</a>
-                <a href="publications.html" class="btn btn-outline btn-sm">All Publications →</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- World Model / Edge Optimization -->
-          <div class="glass-card featured-card">
-            <div class="featured-content">
-              <div class="featured-badge">Carl Zeiss · 2025 — Present</div>
-              <h3 class="featured-title">Foundation Model Optimization for Edge Deployment</h3>
-              <p class="featured-desc">
-                Optimizing large-scale foundation and world models — SAM, DepthAnything, DINOv2, Vision Transformers, and LLMs — for real-time inference on edge accelerators in safety-critical environments (surgical rooms, industrial inspection). Quantization, distillation, and architecture-aware compression pipelines targeting Jetson, FPGAs, and custom silicon with strict latency, energy, and memory budgets.
-              </p>
-              <div class="featured-metrics">
-                <div class="metric"><span class="metric-value">SAM · DINO</span><span class="metric-label">Models</span></div>
-                <div class="metric"><span class="metric-value">FPGA / Jetson</span><span class="metric-label">Targets</span></div>
-                <div class="metric"><span class="metric-value">Real-time</span><span class="metric-label">Inference</span></div>
-              </div>
-              <div class="project-tags">
-                <span class="tag">SAM</span><span class="tag">DepthAnything</span><span class="tag">DINOv2</span><span class="tag">ViT</span><span class="tag">LLMs</span><span class="tag">TensorRT</span><span class="tag">ONNX</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Research & Industry Projects -->
+<main class="main-content" id="main">
+<section class="page-hero"><div class="container"><p class="section-label">Engineering / Selected projects</p><h1 class="section-title">From research to working systems.</h1><p class="section-subtitle">Model optimization, perception, robotics, and applied ML across research labs and industry.</p></div></section><section class="section section-tinted"><div class="container"><p class="section-label">Research foundations</p><h2 class="section-title">Explore the published methods.</h2><div class="related-links"><a href="publications.html#physdnet">PhysDNet <span>Physics-guided edge vision ↗</span></a><a href="publications.html#quant-trim">Quant-Trim <span>Reliable low-bit deployment ↗</span></a><a href="publications.html#shaving-weights">Shaving Weights <span>Bayesian sparsification ↗</span></a></div></div></section>    <!-- Research & Industry Projects -->
     <section class="section">
       <div class="container">
         <h2 class="section-title reveal" style="font-size: 1.5rem; margin-bottom: 1.5rem;">
@@ -181,6 +77,7 @@
         </div>
 
         <div class="projects-grid stagger-children">
+<article class="glass-card project-card" data-category="optimization"><span class="project-category">Model Optimization · ZEISS</span><h3 class="project-title">Foundation Models for Edge Deployment</h3><p class="project-org">Carl Zeiss · 2025 — Present</p><p class="project-desc">Optimizing vision foundation models and language models for real-time inference on edge accelerators. Quantization, distillation, and architecture-aware compression connect model quality with latency, memory, and energy budgets.</p><div class="project-tags"><span class="tag">PyTorch</span><span class="tag">TensorRT</span><span class="tag">ONNX</span><span class="tag">Quantization</span></div><a class="text-link" href="publications.html#quant-trim">Related research: Quant-Trim ↗</a></article>
 
           <!-- Model Optimization -->
           <div class="glass-card project-card" data-category="optimization">
@@ -232,7 +129,7 @@
             <span class="project-category">Perception · CARIAD</span>
             <h3 class="project-title">Open-World Instance Segmentation with Knowledge Distillation</h3>
             <p class="project-org">CARIAD (Volkswagen Group), Munich — 2024</p>
-            <p class="project-desc">Developed visual perception techniques for unknown/novel objects using instance segmentation, language-to-vision alignment, and knowledge distillation. Achieved SOTA on COCO benchmarks. Submitted to CVPR.</p>
+            <p class="project-desc">Developed visual perception techniques for unknown/novel objects using instance segmentation, language-to-vision alignment, and knowledge distillation. Evaluated on public perception benchmarks.</p>
             <div class="project-tags">
               <span class="tag">Transformers</span><span class="tag">Segmentation</span><span class="tag">Knowledge Distillation</span><span class="tag">COCO</span>
             </div>
@@ -346,21 +243,12 @@
         </div>
       </div>
     </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-text">© 2026 Rayen Dhahri · Machine Learning Research Scientist · Munich</p>
-        <div class="footer-links">
-          <a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:rayendhahri@gmail.com">Email</a>
-          <a href="feed.xml">RSS</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
+<section class="section contact-section"><div class="container contact-row"><div><p class="section-label">Let’s connect</p><h2>Research questions. Real-world constraints.</h2><p>Get in touch about efficient AI, research collaboration, or edge deployment.</p></div><a class="btn btn-primary" href="mailto:rayendhahri@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-content">
+  <p class="footer-text">© 2026 Rayen Dhahri · Research &amp; engineering · Munich</p>
+  <div class="footer-links"><a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:rayendhahri@gmail.com">Email</a><a href="feed.xml">RSS</a></div>
+</div></div></footer>
+<script src="js/main.js"></script>
 </body>
 </html>

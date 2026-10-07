@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#f4f5fa">
+  <meta name="theme-color" content="#fffaf1">
   <script>(function(){var t=null;try{t=localStorage.getItem('theme');}catch(e){}if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);})();</script>
   <title>Rayen Dhahri | Machine Learning Research Scientist</title>
-  <meta name="description" content="Rayen Dhahri — Machine Learning Research Scientist specializing in efficient AI: model compression, quantization, and edge deployment of vision and language models.">
+  <meta name="description" content="Rayen Dhahri researches efficient AI, Bayesian sparsification, quantization, physics-guided vision, and edge deployment. Explore research papers and engineering experience.">
   <meta name="author" content="Rayen Dhahri">
   <link rel="canonical" href="https://rayendhahri.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rayen Dhahri | Machine Learning Research Scientist">
-  <meta property="og:description" content="Efficient AI research — model compression, quantization, and edge deployment of vision and language models.">
+  <meta property="og:description" content="Rayen Dhahri researches efficient AI, Bayesian sparsification, quantization, physics-guided vision, and edge deployment. Explore research papers and engineering experience.">
   <meta property="og:url" content="https://rayendhahri.com/">
   <meta name="twitter:card" content="summary">
 
@@ -25,40 +25,30 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/research.css">
+  <link rel="stylesheet" href="css/atmosphere.css">
 
   <!-- Feeds -->
   <link rel="alternate" type="application/rss+xml" title="Rayen Dhahri — Blog" href="https://rayendhahri.com/feed.xml">
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <noscript><style>.page-loader{display:none!important}.reveal,.stagger-children>*{opacity:1!important;transform:none!important}</style></noscript>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Rayen Dhahri", "url": "https://rayendhahri.com/", "jobTitle": "Machine Learning Research Scientist", "sameAs": ["https://github.com/Heatdh", "https://linkedin.com/in/rayen-dh"], "knowsAbout": ["Efficient AI", "Bayesian sparsification", "Quantization", "Computer vision", "Edge AI"], "alumniOf": {"@type": "CollegeOrUniversity", "name": "Technical University of Munich"}}</script>
+<link rel="preload" as="image" href="assets/img/research-landscape.webp">
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <!-- Loader -->
-  <div class="page-loader">
-    <div class="loader-ring"></div>
-  </div>
-
-  <!-- Background Effects -->
-  <canvas id="particles-canvas" aria-hidden="true"></canvas>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
-  <div class="bg-glow bg-glow-3"></div>
-
+<a class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <span class="logo-accent">R</span>ayen<span class="logo-dot"></span>
-      </a>
+      <a href="index.html" class="nav-logo">Rayen Dhahri<span class="logo-dot"></span></a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="publications.html">Research</a></li>
+        <li><a href="blog.html">Notes</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
       <div class="nav-right">
@@ -71,205 +61,26 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <main class="main-content" id="main">
-
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-
-          <!-- Text Side -->
-          <div class="hero-text reveal">
-            <p class="hero-greeting">Hello, I'm</p>
-            <h1 class="hero-name">
-              <span class="name-gradient">Rayen Dhahri</span>
-            </h1>
-            <p class="hero-title"><span class="typed-text"></span></p>
-            <p class="hero-desc">
-              I make state-of-the-art AI run where it matters — compressing and deploying vision and language models on constrained hardware through quantization, pruning, and distillation. Machine Learning Research Scientist in Munich with academic and industrial experience across optics, automotive, and semiconductor leaders.
-            </p>
-            <div class="hero-actions">
-              <a href="projects.html" class="btn btn-primary">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
-                View Projects
-              </a>
-              <a href="blog.html" class="btn btn-outline">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                Read the Blog
-              </a>
-            </div>
-            <div class="hero-socials">
-              <a href="https://github.com/Heatdh" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              </a>
-              <a href="mailto:rayendhahri@gmail.com" class="social-icon" aria-label="Email" title="Email">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </a>
-              <a href="https://scholar.google.com/scholar?q=Rayen+Dhahri" target="_blank" rel="noopener" class="social-icon" aria-label="Google Scholar" title="Google Scholar">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
-              </a>
-            </div>
-          </div>
-
-          <!-- Visual Side -->
-          <div class="hero-visual reveal">
-            <div class="hero-card-wrapper">
-              <div class="glass-card terminal-card">
-                <div class="terminal-bar">
-                  <span class="term-dot red"></span>
-                  <span class="term-dot yellow"></span>
-                  <span class="term-dot green"></span>
-                  <span class="terminal-title">profile.yaml</span>
-                </div>
-                <div class="terminal-body">
-                  <div><span class="t-key">role:</span> <span class="t-str">ML Research Scientist</span></div>
-                  <div><span class="t-key">focus:</span> [<span class="t-str">efficient-ai</span>, <span class="t-str">quantization</span>, <span class="t-str">edge</span>]</div>
-                  <div><span class="t-key">models:</span> [<span class="t-str">vision</span>, <span class="t-str">llms</span>, <span class="t-str">multimodal</span>]</div>
-                  <div><span class="t-key">venues:</span> [<span class="t-str">NeurIPS</span>, <span class="t-str">EurIPS</span>, <span class="t-str">AABI</span>]</div>
-                  <div><span class="t-key">location:</span> <span class="t-str">Munich, DE</span></div>
-                  <div><span class="t-key">incorporated:</span> <span class="t-str">Delaware, US</span></div>
-                  <div><span class="t-comment"># research that ships</span> <span class="terminal-cursor"></span></div>
-                </div>
-              </div>
-              <div class="floating-badge fb-1">Model Compression</div>
-              <div class="floating-badge fb-2">Bayesian Deep Learning</div>
-              <div class="floating-badge fb-3">On-Device AI</div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="section" style="padding-top: 0; padding-bottom: 2rem;">
-      <div class="container">
-        <div class="stats-row reveal">
-          <div class="stat-block">
-            <span class="stat-number" data-count="4">0</span>
-            <span class="stat-caption">Publications & preprints</span>
-          </div>
-          <div class="stat-block">
-            <span class="stat-number" data-count="6" data-suffix="+">0</span>
-            <span class="stat-caption">Years building ML systems</span>
-          </div>
-          <div class="stat-block">
-            <span class="stat-number" data-count="9">0</span>
-            <span class="stat-caption">Research labs & companies</span>
-          </div>
-          <div class="stat-block">
-            <span class="stat-number" data-count="7" data-suffix="×">0</span>
-            <span class="stat-caption">Inference speedup delivered</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Highlights Section -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Highlights</p>
-          <h2 class="section-title">What I Do</h2>
-        </div>
-        <div class="highlights-grid stagger-children">
-          <div class="glass-card highlight-card">
-            <span class="highlight-icon">🧠</span>
-            <h3 class="highlight-title">Model Optimization</h3>
-            <p class="highlight-desc">Quantization (PTQ/QAT), pruning, sparsification, and distillation of deep networks — from foundation models to production-grade deployments.</p>
-          </div>
-          <div class="glass-card highlight-card">
-            <span class="highlight-icon">⚡</span>
-            <h3 class="highlight-title">LLM & VLM Efficiency</h3>
-            <p class="highlight-desc">Making large language and vision-language models faster and lighter with low-bit inference, structured sparsity, and kernel-level optimization.</p>
-          </div>
-          <div class="glass-card highlight-card">
-            <span class="highlight-icon">📡</span>
-            <h3 class="highlight-title">Edge & Accelerator Deployment</h3>
-            <p class="highlight-desc">NPU-first deployment on Jetson, Hailo, Rockchip, and other accelerators — with hard latency, memory, and energy budgets.</p>
-          </div>
-          <div class="glass-card highlight-card">
-            <span class="highlight-icon">📝</span>
-            <h3 class="highlight-title">Research & Publications</h3>
-            <p class="highlight-desc">Published at NeurIPS 2026, NeurIPS 2024, EurIPS 2025, and AABI. Reviewer for top ML venues. Active work on efficient AI for the edge.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Compression Visualization -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Interactive</p>
-          <h2 class="section-title">Model Compression, Visualized</h2>
-          <p class="section-subtitle">A live look at what I do: a dense network is pruned down by weight magnitude until only ~20% of its connections remain — while the signal keeps flowing. Hover over neurons to inspect their connections.</p>
-        </div>
-        <div class="glass-card viz-card reveal">
-          <div class="viz-header">
-            <span class="viz-stat">weights: <strong id="viz-weights">—</strong></span>
-            <span class="viz-stat">sparsity: <strong id="viz-sparsity">0%</strong></span>
-            <span class="viz-stat">status: <strong id="viz-status">dense baseline</strong></span>
-            <button id="viz-replay" class="btn btn-outline btn-sm" type="button">↻ Replay pruning</button>
-          </div>
-          <canvas id="compression-canvas" role="img" aria-label="Animated visualization of neural network pruning: connections are progressively removed while activations continue to flow through the remaining network"></canvas>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recent Blog Preview -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Blog</p>
-          <h2 class="section-title">Latest Posts</h2>
-          <p class="section-subtitle">Practical notes on efficient AI, model compression, and lessons from deploying ML in production.</p>
-        </div>
-        <div class="blog-grid stagger-children">
-          <a href="blog/2026-02-24-welcome.html" class="glass-card blog-card" style="text-decoration:none;">
-            <p class="blog-date">Feb 24, 2026</p>
-            <h3 class="blog-title">Welcome to the blog</h3>
-            <p class="blog-excerpt">What to expect here: efficient deep learning and compression methods, practical lessons from industry ML deployment, and research notes on LLM optimization and sparsity.</p>
-            <div class="blog-tags">
-              <span class="tag">ml</span>
-              <span class="tag">efficient-ai</span>
-              <span class="tag">research</span>
-            </div>
-            <span class="blog-read-more">
-              Read more
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </span>
-          </a>
-        </div>
-        <div class="text-center mt-4 reveal">
-          <a href="blog.html" class="btn btn-outline">All Posts →</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-text">
-          © 2026 Rayen Dhahri · Machine Learning Research Scientist · Munich
-        </p>
-        <div class="footer-links">
-          <a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:rayendhahri@gmail.com">Email</a>
-          <a href="feed.xml">RSS</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/main.js"></script>
+<main class="main-content" id="main">
+<section class="research-hero"><div class="container hero-layout"><div class="hero-intro">
+  <p class="eyebrow"><span class="status-dot"></span> Machine Learning Research Scientist · Munich</p>
+  <h1>Rayen Dhahri<span class="hero-statement">Efficient AI.<br>Real-world impact.</span></h1>
+  <p class="hero-lead">I develop efficient AI that connects principled learning with real-world deployment.</p>
+  <p class="hero-copy">From Bayesian sparsification and low-bit quantization to physics-guided vision, I work on models that do more within the limits of compute, memory, and energy.</p>
+  <div class="hero-actions"><a class="btn btn-primary" href="publications.html">View research &amp; papers <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="cv.html">Experience &amp; CV</a></div>
+  <div class="profile-links"><a href="https://scholar.google.com/scholar?q=Rayen+Dhahri" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub ↗</a><a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:rayendhahri@gmail.com">Email ↗</a></div>
+</div><aside class="hero-personality"><img class="hero-goku" src="assets/img/goku-ai-hero.png" width="1254" height="1254" alt="Custom illustration of Goku on Nimbus, with neural-network motifs flowing through the cloud" fetchpriority="high"><div class="personality-caption"><span>Curiosity. Persistence. A little Dragon Ball.</span><p>Research is serious. The person behind it can have fun.</p></div></aside></div></section>
+<section class="context-strip"><div class="container"><p>Research &amp; industry experience</p><div><span>ZEISS</span><span>ETH Zurich</span><span>INSAIT</span><span>TUM</span><span>EPFL</span><span>BMW</span><span>Intel</span></div></div></section>
+<section class="section" id="research"><div class="container"><div class="section-heading-row"><div><p class="section-label">Selected research</p><h2 class="section-title">Ideas, tested in practice.</h2></div><a class="text-link" href="publications.html">All publications ↗</a></div>
+<article class="spotlight-paper"><a class="spotlight-image" href="publications.html#physdnet"><img src="assets/img/physdnet-application.png" width="1586" height="992" alt="PhysDNet illustration showing hazy imagery and sparse LiDAR fused for restoration, with a potential emergency-response application" loading="lazy"></a><div class="spotlight-content"><p class="paper-meta">01 / NeurIPS 2026 · First author</p><h3><a href="publications.html#physdnet">PhysDNet</a></h3><p class="paper-subtitle">Physics-driven learning for real-time image dehazing.</p><p>Physics shapes training to focus on the most degraded regions. A compact multimodal network restores visibility without adding inference overhead.</p><div class="result-pair"><div><strong>29–99 FPS</strong><span>Across NPU variants, under 4 W</span></div><div><strong>+1.67 dB</strong><span>PSNR vs. FFA-Net on STF</span></div></div><div class="paper-card-links"><a class="text-link" href="publications.html#physdnet">Research details ↗</a><a class="btn btn-outline btn-sm" href="https://rayendhahri.com/PhysDnet/" target="_blank" rel="noopener">Project page ↗</a><a class="btn btn-outline btn-sm" href="assets/papers/physdnet.pdf">Paper PDF ↗</a></div></div></article>
+<div class="paper-preview-grid"><article class="paper-preview"><img src="assets/img/quant-trim-figure.png" width="1210" height="454" alt="Figure 1 from Quant-Trim: reverse pruning and progressive fake quantization, followed by checkpoint export and hardware compilation" loading="lazy"><div><p class="paper-meta">02 / EurIPS 2025 workshop · First author</p><h3><a href="publications.html#quant-trim">Quant-Trim</a></h3><p>Train once for more reliable low-bit deployment across heterogeneous edge accelerators.</p><div class="paper-card-links"><a class="text-link" href="publications.html#quant-trim">Research details ↗</a><a class="btn btn-outline btn-sm" href="assets/papers/quant-trim.pdf">Paper PDF ↗</a></div></div></article><article class="paper-preview"><img src="assets/img/shaving-weights-figure.png" width="1230" height="462" alt="Figure 1 from Shaving Weights: Laplace approximation, marginal-likelihood training, and structured and unstructured pruning" loading="lazy"><div><p class="paper-meta">03 / NeurIPS 2024 · First author</p><h3><a href="publications.html#shaving-weights">Shaving Weights with Occam’s Razor</a></h3><p>Use Bayesian model selection to learn networks that can be pruned more effectively.</p><div class="paper-card-links"><a class="text-link" href="publications.html#shaving-weights">Research details ↗</a><a class="btn btn-outline btn-sm" href="assets/papers/shaving-weights.pdf">Paper PDF ↗</a></div></div></article></div></div></section>
+<section class="section section-tinted"><div class="container"><p class="section-label">Research agenda</p><h2 class="section-title">Efficiency starts with how we learn.</h2><div class="research-pillars"><article><span>01</span><h3>Principled compression</h3><p>Bayesian inference, sparsification, and quantization that connect statistical reasoning to smaller models.</p></article><article><span>02</span><h3>Robust perception</h3><p>Physics-guided learning and multimodal vision for perception under real-world constraints.</p></article><article><span>03</span><h3>AI on the edge</h3><p>Vision and language models optimized for accelerators, with latency, memory, and energy in view.</p></article></div><p class="ongoing-note">Ongoing research extends this agenda to efficient learning and intelligent systems. Further details will follow when the work is ready to share.</p></div></section>
+<section class="section"><div class="container personal-row"><div><p class="section-label">The person behind the papers</p><h2 class="section-title">A researcher who builds.</h2></div><div><p>I bring experience across academic research, automotive systems, optics, and semiconductors. My background in robotics and electrical engineering keeps the full system in view, from learning objectives to the hardware running the model.</p><a href="about.html" class="text-link">More about me ↗</a><a href="blog.html" class="text-link">Research &amp; engineering notes ↗</a></div></div></section><section class="section contact-section"><div class="container contact-row"><div><p class="section-label">Let’s connect</p><h2>Research questions. Real-world constraints.</h2><p>Get in touch about efficient AI, research collaboration, or edge deployment.</p></div><a class="btn btn-primary" href="mailto:rayendhahri@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-content">
+  <p class="footer-text">© 2026 Rayen Dhahri · Research &amp; engineering · Munich</p>
+  <div class="footer-links"><a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:rayendhahri@gmail.com">Email</a><a href="feed.xml">RSS</a></div>
+</div></div></footer>
+<script src="js/main.js"></script>
 </body>
 </html>

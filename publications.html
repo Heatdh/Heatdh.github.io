@@ -4,38 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#f4f5fa">
+  <meta name="theme-color" content="#fffaf1">
   <script>(function(){var t=null;try{t=localStorage.getItem('theme');}catch(e){}if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);})();</script>
-  <title>Publications — Rayen Dhahri</title>
-  <meta name="description" content="Research publications by Rayen Dhahri — NeurIPS 2026, NeurIPS 2024, EurIPS, AABI. PhysDNet, Bayesian sparsification, and quantization for efficient AI.">
+  <title>Research & Publications | Rayen Dhahri</title>
+  <meta name="description" content="Papers by Rayen Dhahri: PhysDNet, Quant-Trim, and Shaving Weights with Occam’s Razor. Efficient AI, physics-guided vision, and Bayesian sparsification.">
+  <meta name="author" content="Rayen Dhahri">
   <link rel="canonical" href="https://rayendhahri.com/publications.html">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Publications — Rayen Dhahri">
-  <meta property="og:description" content="Research publications — NeurIPS, EurIPS, AABI, arXiv. Efficient AI, Bayesian sparsification, and quantization.">
+  <meta property="og:title" content="Research & Publications | Rayen Dhahri">
+  <meta property="og:description" content="Papers by Rayen Dhahri: PhysDNet, Quant-Trim, and Shaving Weights with Occam’s Razor. Efficient AI, physics-guided vision, and Bayesian sparsification.">
   <meta property="og:url" content="https://rayendhahri.com/publications.html">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="css/research.css">
+  <link rel="stylesheet" href="css/atmosphere.css">
+
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="Rayen Dhahri — Blog" href="https://rayendhahri.com/feed.xml">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <noscript><style>.page-loader{display:none!important}.reveal,.stagger-children>*{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="page-loader"><div class="loader-ring"></div></div>
-  <canvas id="particles-canvas" aria-hidden="true"></canvas>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
-
+<a class="skip-link" href="#main">Skip to content</a>
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo"><span class="logo-accent">R</span>ayen<span class="logo-dot"></span></a>
+      <a href="index.html" class="nav-logo">Rayen Dhahri<span class="logo-dot"></span></a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="publications.html" class="active" aria-current="page">Research</a></li>
+        <li><a href="blog.html">Notes</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
       <div class="nav-right">
@@ -48,111 +59,24 @@
     </div>
   </nav>
 
-  <main class="main-content" id="main">
-    <section class="page-hero">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">Publications</p>
-          <h1 class="section-title">Research & Papers</h1>
-          <p class="section-subtitle">Peer-reviewed work on efficient AI — physics-guided edge vision, Bayesian sparsification, quantization, and deployment-robust model compression.</p>
-          <div class="anime-line"></div>
-        </div>
-        <div class="reveal mt-4" style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
-          <a href="https://scholar.google.com/scholar?q=Rayen+Dhahri" target="_blank" rel="noopener" class="btn btn-outline">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right:4px"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
-            Google Scholar
-          </a>
-          <a href="https://arxiv.org/search/?query=Rayen+Dhahri&searchtype=author" target="_blank" rel="noopener" class="btn btn-outline">arXiv Profile</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="publications-list stagger-children">
-
-          <!-- 2026 -->
-          <div class="glass-card pub-card pub-card-featured">
-            <p class="pub-year">2026 · Accepted · First Author</p>
-            <h3 class="pub-title">PhysDNet: Physics-Driven Gradient Amplification for Real-Time Image Dehazing</h3>
-            <p class="pub-venue">NeurIPS 2026 (Main Track)</p>
-            <p class="pub-authors">Rayen Dhahri et al., with Luca Benini (ETH Zurich) and Luc Van Gool (INSAIT)</p>
-            <figure class="pub-teaser">
-              <img src="assets/img/physdnet-teaser.png" alt="PhysDNet architecture: hazy NIR and sparse LiDAR are encoded separately, merged by mask-aware gated fusion, and decoded into a deployed direct head and a training-only physics head whose Koschmieder inversion amplifies gradients in dense haze" width="1692" height="492" loading="lazy">
-              <figcaption>Multimodal fusion of gated NIR imagery and sparse LiDAR, trained with a physics-constrained dual head. Backpropagating through the Koschmieder inversion amplifies gradients in heavily degraded regions, at zero inference cost.</figcaption>
-            </figure>
-            <p class="pub-summary">A lightweight multimodal dehazing network for real-time edge deployment. Differentiating through a fixed physical inversion induces <strong>density-adaptive gradient amplification</strong>, an implicit curriculum that concentrates learning on the most degraded pixels without adding inference cost. On the Seeing Through Fog benchmark, PhysDNet outperforms prior methods by <strong>+1.67 dB at 5.2× lower compute</strong>, recovers 54.9% of fog-induced detection loss, and runs on fixed-function NPUs at <strong>29–99 FPS under 4 W</strong>.</p>
-            <p class="pub-funding">A collaboration between ETH Zurich and INSAIT, supported by the European Union's Horizon Europe programme (grant agreement 101168521).</p>
-            <div class="pub-links">
-              <a href="https://anonymous.4open.science/r/PhysDNet-1D62/" target="_blank" rel="noopener" class="pub-link">💻 Code & Checkpoints</a>
-            </div>
-          </div>
-
-          <!-- 2025 -->
-          <div class="glass-card pub-card">
-            <p class="pub-year">2025 · First Author</p>
-            <h3 class="pub-title">Quant-Trim in Practice: Improved Cross-Platform Low-Bit Deployment on Edge NPUs</h3>
-            <p class="pub-venue">EurIPS 2025</p>
-            <p class="pub-summary">A training-phase method producing hardware-neutral checkpoints robust to backend and precision choices. Combines progressive fake quantization with reverse pruning to tame outlier-driven scale inflation. Agnostic to quantization schemes (symmetric/asymmetric, per-tensor/per-channel, INT8/INT4), requires no vendor-specific graph changes, and avoids per-backend retraining.</p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2511.15300" target="_blank" rel="noopener" class="pub-link">📄 arXiv</a>
-              <a href="https://arxiv.org/pdf/2511.15300" target="_blank" rel="noopener" class="pub-link">📋 PDF</a>
-            </div>
-          </div>
-
-          <!-- 2024 -->
-          <div class="glass-card pub-card">
-            <p class="pub-year">2024 · First Author</p>
-            <h3 class="pub-title">Shaving Weights with Occam's Razor: Bayesian Sparsification for Neural Networks Using the Marginal Likelihood</h3>
-            <p class="pub-venue">NeurIPS 2024 (Main Track) & AABI 2024</p>
-            <p class="pub-summary">A principled Bayesian approach to neural network sparsification using the marginal likelihood, achieving state-of-the-art compression while maintaining model performance — with applications to vision transformers and LLMs.</p>
-            <div class="pub-links">
-              <a href="https://neurips.cc/virtual/2024/poster/95142" target="_blank" rel="noopener" class="pub-link">📄 NeurIPS</a>
-              <a href="https://openreview.net/forum?id=jYOd0K74PB" target="_blank" rel="noopener" class="pub-link">🔗 OpenReview (AABI)</a>
-            </div>
-          </div>
-
-          <!-- 2023 -->
-          <div class="glass-card pub-card">
-            <p class="pub-year">2023 · First Author</p>
-            <h3 class="pub-title">From Judgement's Premises Towards Key Points</h3>
-            <p class="pub-venue">arXiv</p>
-            <p class="pub-summary">Advanced NLP methods for extracting key points from legal texts, enhancing automated document analysis with BERT, IBM Debater, and graph-based approaches.</p>
-            <div class="pub-links">
-              <a href="https://arxiv.org/abs/2212.12238" target="_blank" rel="noopener" class="pub-link">📄 arXiv</a>
-              <a href="https://arxiv.org/pdf/2212.12238.pdf" target="_blank" rel="noopener" class="pub-link">📋 PDF</a>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Academic Service -->
-        <div class="section-header reveal" style="margin-top: 4rem;">
-          <p class="section-label">Academic Service</p>
-          <h2 class="section-title" style="font-size: 1.5rem;">Reviewing</h2>
-        </div>
-        <div class="glass-card reveal" style="padding: 2rem;">
-          <p class="pub-summary" style="margin-bottom: 0;">
-            Scientific reviewer for top-tier machine learning conferences (<strong>ICML</strong>, <strong>NeurIPS</strong>) and journals (<strong>JAIR</strong>), covering probabilistic inference, compression, efficient AI, computer vision, and LLMs.
-          </p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-text">© 2026 Rayen Dhahri · Machine Learning Research Scientist · Munich</p>
-        <div class="footer-links">
-          <a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:rayendhahri@gmail.com">Email</a>
-          <a href="feed.xml">RSS</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
+<main class="main-content" id="main">
+<section class="page-hero"><div class="container"><p class="section-label">Research / Publications</p><h1 class="section-title">Learning for efficient intelligence.</h1><p class="section-subtitle">Selected papers on physics-guided perception, cross-platform quantization, and Bayesian sparsification.</p></div></section>
+<section class="section publications-section"><div class="container"><div class="profile-links"><a href="https://scholar.google.com/scholar?q=Rayen+Dhahri" target="_blank" rel="noopener">Google Scholar ↗</a><a href="https://arxiv.org/search/?query=Rayen+Dhahri&amp;searchtype=author" target="_blank" rel="noopener">arXiv ↗</a></div><div class="publication-index"><a href="#physdnet">01 PhysDNet</a><a href="#quant-trim">02 Quant-Trim</a><a href="#shaving-weights">03 Shaving Weights</a><a href="#earlier-work">Earlier work</a></div>
+<article class="research-paper" id="physdnet"><div class="paper-number">01 <span>2026</span></div><div class="paper-body"><p class="paper-meta">NeurIPS 2026 · Main track · First author</p><h2>PhysDNet: Physics-Driven Gradient Amplification for Real-Time Image Dehazing</h2><p class="paper-authors"><strong>Rayen Dhahri</strong>, Lei Sun, Victor Javier Kartsch Morinigo, Alice Pagnoux, Luca Benini, Danda Pani Paudel, Luc Van Gool</p><p>A lightweight network fuses time-gated NIR imagery with sparse LiDAR. A physics-based auxiliary head amplifies gradients in regions of dense haze during training; only the direct restoration head is deployed.</p><div class="contribution"><h3>The contribution</h3><p>Use physical inversion to shape optimization, concentrating learning on degraded pixels while keeping the inference footprint unchanged.</p></div><dl class="paper-results"><div><dt>+1.67 dB</dt><dd>PSNR vs. FFA-Net on Seeing Through Fog</dd></div><div><dt>5.2× lower</dt><dd>Compute for the reported comparison</dd></div><div><dt>29–99 FPS</dt><dd>L/M/S NPU variants, under 4 W</dd></div><div><dt>54.9%</dt><dd>Fog-induced detection loss recovered</dd></div></dl>
+<figure class="research-figure"><a href="assets/img/physdnet-application.png"><img src="assets/img/physdnet-application.png" width="1586" height="992" alt="PhysDNet: density-adaptive gradient amplification during training, multimodal restoration, and an illustrative emergency-response application" loading="lazy"></a><figcaption>Application illustration supplied by the author. Emergency response is a potential application; the reported metrics come from the paper’s benchmark evaluations.</figcaption></figure>
+<details class="paper-details"><summary>Architecture overview</summary><figure class="research-figure"><img src="assets/img/physdnet-teaser.png" width="1692" height="492" alt="Dual NIR and LiDAR encoders, mask-aware fusion, a deployed direct head, and a training-only physics head" loading="lazy"><figcaption>The physics head affects training. The direct restoration head runs at inference.</figcaption></figure></details>
+<div class="pub-links"><a class="btn btn-primary btn-sm" href="assets/papers/physdnet.pdf">Read paper (PDF) ↗</a><a class="btn btn-outline btn-sm" href="https://rayendhahri.com/PhysDnet/" target="_blank" rel="noopener">Project page ↗</a><a class="btn btn-outline btn-sm" href="https://anonymous.4open.science/r/PhysDNet-1D62/" target="_blank" rel="noopener">Code &amp; checkpoints ↗</a></div></div></article>
+<article class="research-paper" id="quant-trim"><div class="paper-number">02 <span>2025</span></div><div class="paper-body"><p class="paper-meta">EurIPS 2025 workshop · First author</p><h2>Quant-Trim in Practice: Improved Cross-Platform Low-Bit Deployment on Edge NPUs</h2><p class="paper-authors"><strong>Rayen Dhahri</strong>, Steffen Urban · Carl Zeiss AG</p><p class="venue-detail">Workshop: Rethinking AI: Efficiency, Frugality, and Sustainability</p><p>Different edge compilers can turn the same floating-point checkpoint into very different low-bit models. Quant-Trim combines progressive fake quantization with reverse pruning to reduce sensitivity to scaling and clipping choices.</p><div class="contribution"><h3>The contribution</h3><p>A training-time approach to hardware-neutral checkpoints, designed to reduce the need for backend-specific retraining and graph changes.</p></div><figure class="research-figure diagram"><img src="assets/img/quant-trim-figure.png" width="1210" height="454" alt="Original Quant-Trim training pipeline figure from the paper" loading="lazy"><figcaption>Figure 1 from Quant-Trim: training-time reverse pruning and progressive fake quantization, followed by standard export.</figcaption></figure><div class="pub-links"><a href="https://arxiv.org/abs/2511.15300" class="btn btn-primary btn-sm" target="_blank" rel="noopener">Paper on arXiv ↗</a><a href="assets/papers/quant-trim.pdf" class="btn btn-outline btn-sm" target="_blank" rel="noopener">PDF ↗</a></div></div></article>
+<article class="research-paper" id="shaving-weights"><div class="paper-number">03 <span>2024</span></div><div class="paper-body"><p class="paper-meta">NeurIPS 2024 · Main track · First author</p><h2>Shaving Weights with Occam’s Razor: Bayesian Sparsification for Neural Networks Using the Marginal Likelihood</h2><p class="paper-authors"><strong>Rayen Dhahri</strong>, Alexander Immer, Betrand Charpentier, Stephan Günnemann, Vincent Fortuin</p><p>Sparsifiability via the Marginal likelihood (SpaM) uses Bayesian model selection and sparsity-inducing priors to train networks that are easier to prune. The approach supports structured and unstructured sparsification.</p><div class="contribution"><h3>The contribution</h3><p>Improve the model’s capacity to be pruned during training. Reuse the Laplace posterior precision to obtain Optimal Posterior Damage, an inexpensive pruning criterion.</p></div><figure class="research-figure diagram"><img src="assets/img/shaving-weights-figure.png" width="1230" height="462" alt="Original SpaM method overview from Shaving Weights with Occam’s Razor" loading="lazy"><figcaption>Figure 1 from Shaving Weights: marginal-likelihood training and posterior-based pruning for structured and unstructured sparsification.</figcaption></figure><div class="pub-links"><a href="https://neurips.cc/virtual/2024/poster/95142" class="btn btn-primary btn-sm" target="_blank" rel="noopener">NeurIPS paper ↗</a><a href="https://arxiv.org/abs/2402.15978" class="btn btn-outline btn-sm" target="_blank" rel="noopener">arXiv ↗</a><a href="assets/papers/shaving-weights.pdf" class="btn btn-outline btn-sm" target="_blank" rel="noopener">PDF ↗</a><a href="https://openreview.net/forum?id=jYOd0K74PB" class="btn btn-outline btn-sm" target="_blank" rel="noopener">AABI record ↗</a></div></div></article>
+<article class="research-paper" id="earlier-work"><div class="paper-number">04 <span>2022</span></div><div class="paper-body"><p class="paper-meta">arXiv preprint · Legal NLP</p><h2>From Judgement’s Premises Towards Key Points</h2><p>Key-point extraction from legal judgements, connecting language models and graph-based methods to automated document analysis.</p><div class="pub-links"><a href="https://arxiv.org/abs/2212.12238" class="btn btn-outline btn-sm" target="_blank" rel="noopener">Paper on arXiv ↗</a></div></div></article>
+<aside class="ongoing-research"><p class="section-label">Ongoing research</p><h2>More questions in progress.</h2><p>I am continuing work on efficient learning and intelligent systems. Details will be shared as the work becomes public.</p></aside>
+<div class="service-block"><p class="section-label">Academic service</p><h2>Scientific reviewing</h2><p>Reviewer for ICML, NeurIPS, and JAIR, with interests spanning probabilistic inference, compression, computer vision, and efficient AI.</p></div>
+</div></section><section class="section contact-section"><div class="container contact-row"><div><p class="section-label">Let’s connect</p><h2>Research questions. Real-world constraints.</h2><p>Get in touch about efficient AI, research collaboration, or edge deployment.</p></div><a class="btn btn-primary" href="mailto:rayendhahri@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-content">
+  <p class="footer-text">© 2026 Rayen Dhahri · Research &amp; engineering · Munich</p>
+  <div class="footer-links"><a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:rayendhahri@gmail.com">Email</a><a href="feed.xml">RSS</a></div>
+</div></div></footer>
+<script src="js/main.js"></script>
 </body>
 </html>

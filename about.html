@@ -4,39 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#f4f5fa">
+  <meta name="theme-color" content="#fffaf1">
   <script>(function(){var t=null;try{t=localStorage.getItem('theme');}catch(e){}if(t!=='light'&&t!=='dark'){t='light';}document.documentElement.setAttribute('data-theme',t);})();</script>
-  <title>About — Rayen Dhahri</title>
-  <meta name="description" content="About Rayen Dhahri — Machine Learning Research Scientist specializing in efficient AI, model compression, and edge deployment.">
+  <title>About | Rayen Dhahri</title>
+  <meta name="description" content="Rayen Dhahri’s research background, industry experience, education, and approach to efficient AI and practical deployment.">
+  <meta name="author" content="Rayen Dhahri">
   <link rel="canonical" href="https://rayendhahri.com/about.html">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="About — Rayen Dhahri">
-  <meta property="og:description" content="Machine Learning Research Scientist specializing in efficient AI, model compression, and edge deployment.">
+  <meta property="og:title" content="About | Rayen Dhahri">
+  <meta property="og:description" content="Rayen Dhahri’s research background, industry experience, education, and approach to efficient AI and practical deployment.">
   <meta property="og:url" content="https://rayendhahri.com/about.html">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="css/research.css">
+  <link rel="stylesheet" href="css/atmosphere.css">
+
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="Rayen Dhahri — Blog" href="https://rayendhahri.com/feed.xml">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <noscript><style>.page-loader{display:none!important}.reveal,.stagger-children>*{opacity:1!important;transform:none!important}</style></noscript>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="page-loader"><div class="loader-ring"></div></div>
-  <canvas id="particles-canvas" aria-hidden="true"></canvas>
-  <div class="bg-glow bg-glow-1"></div>
-  <div class="bg-glow bg-glow-2"></div>
-
+<a class="skip-link" href="#main">Skip to content</a>
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo"><span class="logo-accent">R</span>ayen<span class="logo-dot"></span></a>
+      <a href="index.html" class="nav-logo">Rayen Dhahri<span class="logo-dot"></span></a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="publications.html">Publications</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="publications.html">Research</a></li>
+        <li><a href="blog.html">Notes</a></li>
         <li><a href="cv.html">CV</a></li>
       </ul>
       <div class="nav-right">
@@ -49,117 +59,15 @@
     </div>
   </nav>
 
-  <main class="main-content" id="main">
-    <!-- Page Header -->
-    <section class="page-hero">
-      <div class="container">
-        <div class="section-header reveal">
-          <p class="section-label">About Me</p>
-          <h1 class="section-title">Bridging Research & Production</h1>
-          <div class="anime-line"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Content -->
-    <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="about-grid reveal">
-
-          <!-- Photo -->
-          <div class="about-photo-wrapper">
-            <div class="about-photo-placeholder">🧑‍💻</div>
-            <!-- Replace with: <img src="assets/img/profile.jpg" alt="Portrait" class="about-photo"> -->
-          </div>
-
-          <!-- Info -->
-          <div class="about-info">
-            <p>
-              I am a <strong>Machine Learning Research Scientist</strong> focused on <strong>efficient AI</strong> — turning large vision and language models into fast, robust, production-ready systems. My work spans model optimization (quantization, pruning, sparsification), accelerator-aware inference on NPUs and GPUs, and real-time pipelines for edge and cloud.
-            </p>
-            <p>
-              I currently work on generative AI and computer vision at a global optics and optoelectronics company in Munich, and conduct independent research on efficient AI with INSAIT and ETH Zurich, collaborating with academic and industry partners on EU Horizon Europe–funded projects.
-            </p>
-
-            <h3>Quick Facts</h3>
-            <ul>
-              <li>📍 Based in Munich, Germany · Incorporated in Delaware, United States</li>
-              <li>🎓 MSc in Robotics, Cognition, Intelligence — Technical University of Munich, with a research stay at EPFL</li>
-              <li>🌟 Published at NeurIPS 2026, NeurIPS 2024, EurIPS 2025, and AABI on efficient AI and neural network compression</li>
-              <li>🧪 Reviewer for ICML, NeurIPS, and JAIR</li>
-              <li>🔧 Foundation models, computer vision, LLM optimization, Bayesian inference, edge AI</li>
-              <li>🌍 Arabic & French (native), English & German (fluent)</li>
-            </ul>
-
-            <h3>What Drives Me</h3>
-            <p>
-              The best model is not the biggest one — it's the one that solves the problem within real constraints. I thrive on the gap between state-of-the-art research and deployment: compressing vision foundation models for real-time edge inference, running LLMs on-device, and developing principled Bayesian approaches to network sparsification. I care about research that ships and delivers measurable value.
-            </p>
-
-            <h3>Experience Highlights</h3>
-            <ul>
-              <li>Zeiss — Machine Learning Research Scientist: generative AI & computer vision on edge accelerators</li>
-              <li>INSAIT / ETH Zurich — Independent researcher on efficient AI; first author of PhysDNet (NeurIPS 2026, Main Track) with the groups of Luca Benini and Luc Van Gool</li>
-              <li>CARIAD (Volkswagen Group) — Instance & semantic segmentation research for vehicle perception</li>
-              <li>ETH Zurich — NeurIPS 2024 publication on Bayesian sparsification</li>
-              <li>BMW — Neural network optimization for resource-constrained automotive hardware</li>
-              <li>Huawei — RL & LLM-based optimization for robotic fleets</li>
-              <li>Intel — Sparse & quantized networks (4× memory reduction, up to 7× speedup)</li>
-              <li>EPFL — Saliency prediction research</li>
-              <li>Infineon — AI pipelines for microchip testing & anomaly detection</li>
-            </ul>
-
-            <h3>Certifications</h3>
-            <div class="credly-badges">
-              <a href="https://www.credly.com/users/rayen-dhahri/" target="_blank" rel="noopener" class="credly-badge-link">
-                <div class="credly-badge">
-                  <div class="credly-icon">
-                    <svg viewBox="0 0 24 24" width="32" height="32" fill="#76b900"><path d="M12 2L1 7v10l11 5 11-5V7L12 2zm0 2.18l8 3.64v7.36l-8 3.64-8-3.64V7.82l8-3.64z"/><path d="M12 6l-6 2.73v6.54L12 18l6-2.73V8.73L12 6zm0 1.82l3.6 1.64L12 11.09l-3.6-1.63L12 7.82zM8 10.55l3 1.36v3.54l-3-1.36v-3.54zm8 0v3.54l-3 1.36v-3.54l3-1.36z"/></svg>
-                  </div>
-                  <div class="credly-info">
-                    <span class="credly-title">NVIDIA Certified Professional — GenAI & LLMs</span>
-                    <span class="credly-issuer">Verify on Credly →</span>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.credly.com/users/rayen-dhahri/" target="_blank" rel="noopener" class="credly-badge-link">
-                <div class="credly-badge">
-                  <div class="credly-icon" style="background: rgba(0, 102, 179, 0.1);">
-                    <svg viewBox="0 0 24 24" width="32" height="32" fill="#0066b3"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-                  </div>
-                  <div class="credly-info">
-                    <span class="credly-title">McKinsey Forward</span>
-                    <span class="credly-issuer" style="color: #0066b3;">Verify on Credly →</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="about-links">
-              <a href="https://scholar.google.com/scholar?q=Rayen+Dhahri" target="_blank" rel="noopener" class="btn btn-outline">Google Scholar</a>
-              <a href="https://arxiv.org/search/?query=Rayen+Dhahri&searchtype=author" target="_blank" rel="noopener" class="btn btn-outline">arXiv</a>
-              <a href="cv.html" class="btn btn-primary">View Full CV</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-text">© 2026 Rayen Dhahri · Machine Learning Research Scientist · Munich</p>
-        <div class="footer-links">
-          <a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:rayendhahri@gmail.com">Email</a>
-          <a href="feed.xml">RSS</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="js/main.js"></script>
+<main class="main-content" id="main">
+<section class="page-hero"><div class="container"><p class="section-label">About / Background</p><h1 class="section-title">Research curiosity.<br>Engineering instinct.</h1><p class="section-subtitle">Machine Learning Research Scientist based in Munich, working across efficient AI, computer vision, and on-device inference.</p></div></section>
+<section class="section"><div class="container biography-layout"><aside class="bio-card"><div class="bio-avatar"><img src="assets/img/goku-ai-hero.png" width="1254" height="1254" alt="Custom Goku-on-Nimbus illustration with neural-network motifs" loading="lazy"></div><dl><div><dt>Based in</dt><dd>Munich, Germany</dd></div><div><dt>Background</dt><dd>Robotics &amp; electrical engineering</dd></div><div><dt>Languages</dt><dd>Arabic, French, English, German</dd></div></dl><a class="btn btn-outline" href="cv.html">View full CV ↗</a></aside><div class="biography"><h2>I work where learning meets deployment.</h2><p>My research asks how we can make AI more capable within practical constraints. I connect Bayesian methods, model compression, and physics-guided learning with the engineering needed to run models on real devices.</p><p>At ZEISS, I work on machine learning for generative AI and computer vision, including the optimization of foundation models for edge accelerators. Alongside this, I conduct independent research with collaborators in the INSAIT and ETH Zurich research ecosystem.</p><p>My first-author work includes PhysDNet, Quant-Trim, and Shaving Weights with Occam’s Razor. These projects approach efficiency from different directions: the learning signal, numerical precision, and the model’s capacity to be pruned.</p><h2>A perspective shaped by the full system.</h2><p>I studied Robotics, Cognition, Intelligence at the Technical University of Munich, following a bachelor’s degree in Electrical Engineering &amp; IT. A research stay at EPFL and experience at ETH Zurich, Intel, BMW, Huawei, CARIAD, and Infineon shaped how I approach problems across software, models, and hardware.</p><p>I enjoy turning research questions into working systems, then using what deployment reveals to ask better questions.</p><h2>A little personality, too.</h2><p>The Goku-on-Nimbus avatar is a nod to my love of Dragon Ball. Curiosity, persistence, and the drive to keep improving are part of what I bring to research.</p><h2>Research as a shared practice.</h2><p>I review for ICML, NeurIPS, and JAIR. I speak Arabic and French natively, and English and German fluently.</p><div class="about-links"><a class="text-link" href="publications.html">My research ↗</a><a class="text-link" href="https://www.credly.com/users/rayen-dhahri/" target="_blank" rel="noopener">Certifications on Credly ↗</a></div></div></div></section>
+<section class="section section-tinted"><div class="container"><p class="section-label">Certifications</p><div class="credentials"><div><h3>NVIDIA Certified Professional</h3><p>Generative AI &amp; LLMs</p></div><div><h3>McKinsey Forward</h3><p>Professional development programme</p></div><a class="text-link" href="https://www.credly.com/users/rayen-dhahri/" target="_blank" rel="noopener">Verify credentials ↗</a></div></div></section><section class="section contact-section"><div class="container contact-row"><div><p class="section-label">Let’s connect</p><h2>Research questions. Real-world constraints.</h2><p>Get in touch about efficient AI, research collaboration, or edge deployment.</p></div><a class="btn btn-primary" href="mailto:rayendhahri@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="footer"><div class="container"><div class="footer-content">
+  <p class="footer-text">© 2026 Rayen Dhahri · Research &amp; engineering · Munich</p>
+  <div class="footer-links"><a href="https://github.com/Heatdh" target="_blank" rel="noopener">GitHub</a><a href="https://linkedin.com/in/rayen-dh" target="_blank" rel="noopener">LinkedIn</a><a href="mailto:rayendhahri@gmail.com">Email</a><a href="feed.xml">RSS</a></div>
+</div></div></footer>
+<script src="js/main.js"></script>
 </body>
 </html>
